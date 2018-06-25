@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotelmenu_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/color_menu_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_hotel_menu"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_hotel_menu" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_ch_lock"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_ch_lock" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_max_vol"
+                style="@style/hotel_menu_sty_seekbar_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_seekbar_name"
+                    android:text="@string/str_max_vol" />
+
+                <SeekBar style="@style/hotel_menu_sty_bar" />
+                <TextView style="@style/hotel_menu_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_auto_set"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_auto_set" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_picture_mode"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_picture_mode" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_power_vol"
+                style="@style/hotel_menu_sty_seekbar_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_seekbar_name"
+                    android:text="@string/str_power_vol" />
+                <SeekBar style="@style/hotel_menu_sty_bar" />
+                <TextView style="@style/hotel_menu_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_power_source"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_power_source" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_power_ch_number"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_power_ch_number" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_key_lock"
+                style="@style/hotel_menu_sty_combo_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_combo_name"
+                    android:text="@string/str_key_lock" />
+
+                <ImageView style="@style/hotel_menu_sty_leftarrow" >
+                </ImageView>
+
+                <TextView style="@style/hotel_menu_sty_combo_indicator" />
+
+                <ImageView style="@style/hotel_menu_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_logo_set"
+                style="@style/hotel_menu_sty_button_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_button_name"
+                    android:text="@string/str_logo_set" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_clone"
+                style="@style/hotel_menu_sty_button_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_button_name"
+                    android:text="@string/str_clone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/dialog_bg">
+    
+    <TextView
+        android:id="@+id/restore_user_choose_tip"
+		 android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+		 android:layout_marginTop="15dp"
+		 android:layout_centerHorizontal="true"
+	     android:textSize="30sp"
+		 android:textColor="#4184f0"
+		 android:text="@string/str_dialog_tip"
+		 />
+
+    
+    <TextView
+         android:id="@+id/restore_user_choose_info"
+		 android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/restore_user_choose_tip"
+		 android:layout_marginTop="40dp"
+		 android:paddingLeft="50dp"
+		 android:paddingRight="50dp"
+		 android:layout_centerHorizontal="true"
+	     android:textSize="25sp"
+		 android:textColor="#fff"
+		 android:text="@string/str_root_alert_dialog_message_restore_to_default"
+		 />
+    
+   	<RelativeLayout 
+	 		android:id="@+id/exit_tv_dialog_btns_ly"
+			android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/restore_user_choose_info"
+	        android:layout_alignStart="@+id/restore_user_choose_info"
+	        android:layout_alignEnd="@+id/restore_user_choose_info"
+		    android:layout_marginTop="80dp"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:orientation="horizontal"
+			>
+			<Button
+			  	android:id="@+id/restore_user_choose_yes"
+			    android:layout_width="135dp" 
+			    android:layout_height="wrap_content" 
+			    android:layout_alignParentLeft="true"
+			    android:gravity="center"
+			    android:text="@string/str_root_alert_dialog_confirm"
+			    android:textColor="#ffffff"
+			    android:textSize="26sp"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true"
+			    android:background="@drawable/selector_dialog_btn"
+			    />
+			<Button 
+				android:id="@+id/restore_user_choose_no" 
+			    android:layout_width="135dp" 
+			    android:layout_height="wrap_content" 
+			    android:layout_alignParentRight="true"
+			    android:gravity="center"
+			    android:text="@string/str_root_alert_dialog_cancel"
+			    android:textColor="#ffffff"
+			    android:textSize="26sp"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true"
+			    android:background="@drawable/selector_dialog_btn"
+			    />												
+		</RelativeLayout>
+    
+</RelativeLayout>

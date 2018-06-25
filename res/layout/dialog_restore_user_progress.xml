@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    
+    <TextView
+        android:id="@+id/restore_user_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/str_reset_info"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    
+
+     <ProgressBar
+         android:id="@+id/restore_user_dialog_progress"
+         style="@style/mMaterialProgressBar"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_below="@+id/restore_user_dialog_title"
+         android:layout_marginTop="15dp"
+         android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/restore_user_dialog_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/restore_user_dialog_progress"
+        android:layout_alignTop="@+id/restore_user_dialog_progress"
+        android:layout_alignBottom="@+id/restore_user_dialog_progress"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|left"
+        android:text="@string/str_being_reset"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    
+</RelativeLayout>

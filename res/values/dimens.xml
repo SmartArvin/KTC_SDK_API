@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- circle item -->
+    <dimen name="dimen_circle_item_root_height">65dp</dimen>
+
+    <!-- first_menu_layout -->
+    <dimen name="dimen_item1_left">-30dp</dimen>
+    <dimen name="dimen_item1_top">90dp</dimen>
+    <dimen name="dimen_item2_left">30dp</dimen>
+    <dimen name="dimen_item2_top">150dp</dimen>
+    <dimen name="dimen_item3_left">72dp</dimen>
+    <dimen name="dimen_item3_top">225dp</dimen>
+    
+    <dimen name="dimen_item4_width">330dp</dimen>
+    <dimen name="dimen_item4_height">70dp</dimen>
+    <dimen name="dimen_item4_left">50dp</dimen>
+    <dimen name="dimen_item4_padding_left">48dp</dimen>
+    <dimen name="dimen_item4_padding_right">50dp</dimen>
+    
+    <dimen name="dimen_item5_left">72dp</dimen>
+    <dimen name="dimen_item5_top">425dp</dimen>
+    <dimen name="dimen_item6_left">30dp</dimen>
+    <dimen name="dimen_item6_top">495dp</dimen>
+    <dimen name="dimen_item7_left">-30dp</dimen>
+    <dimen name="dimen_item7_top">555dp</dimen>
+    
+    <dimen name="dimen_second_left">-50dp</dimen>
+    
+    <!-- picture menu -->
+    <dimen name="dimen_picture_menu_item_width">430dp</dimen>
+    <dimen name="dimen_picture_menu_item_height">50dp</dimen>
+    <dimen name="dimen_picture_menu_item_name">240dp</dimen>
+    <dimen name="dimen_picture_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_picture_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_picture_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_picture_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_picture_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_picture_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- sound menu -->
+    <dimen name="dimen_sound_menu_item_width">340dp</dimen>
+    <dimen name="dimen_sound_menu_item_height">50dp</dimen>
+    <dimen name="dimen_sound_menu_item_name">150dp</dimen>
+    <dimen name="dimen_sound_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_sound_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_sound_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_sound_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_sound_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_sound_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- channel menu -->
+    <dimen name="dimen_channel_menu_item_width">290dp</dimen>
+    <dimen name="dimen_channel_menu_item_height">50dp</dimen>
+    <dimen name="dimen_channel_menu_item_name">100dp</dimen>
+    <dimen name="dimen_channel_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_channel_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_channel_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_channel_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_channel_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_channel_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- setting menu -->
+    <dimen name="dimen_setting_menu_item_width">450dp</dimen>
+    <dimen name="dimen_setting_menu_item_height">50dp</dimen>
+    <dimen name="dimen_setting_menu_item_name">220dp</dimen>
+    <dimen name="dimen_setting_menu_item_indicator">150dp</dimen>
+    <dimen name="dimen_setting_menu_bar_width">150dp</dimen>
+    <dimen name="dimen_setting_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_setting_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_setting_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_setting_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- parental control menu -->
+    <dimen name="dimen_control_menu_item_width">330dp</dimen>
+    <dimen name="dimen_control_menu_item_height">50dp</dimen>
+    <dimen name="dimen_control_menu_item_name">150dp</dimen>
+    <dimen name="dimen_control_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_control_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_control_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- pc_image_mode -->
+    <dimen name="dimen_pc_image_menu_item_width">370dp</dimen>
+    <dimen name="dimen_pc_image_menu_item_height">50dp</dimen>
+    <dimen name="dimen_pc_image_menu_item_name">180dp</dimen>
+    <dimen name="dimen_pc_image_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_pc_image_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_pc_image_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_pc_image_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_pc_image_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_pc_image_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- autotuning -->
+    <dimen name="dimen_autotuning_menu_item_width">330dp</dimen>
+    <dimen name="dimen_autotuning_menu_item_height">50dp</dimen>
+    <dimen name="dimen_autotuning_menu_item_name">150dp</dimen>
+    <dimen name="dimen_autotuning_menu_item_indicator">130dp</dimen>
+    <dimen name="dimen_autotuning_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_autotuning_menu_item_arrows_height">20dp</dimen>
+    <dimen name="dimen_autotuning_menu_button_name">110dp</dimen>
+    <dimen name="dimen_autotuning_menu_button_number_width">130dp</dimen>
+    <dimen name="dimen_autotuning_menu_button_program_width">120dp</dimen>
+    
+    <!-- ntsc_atv_manual -->
+    <dimen name="dimen_atv_manual_menu_item_width">320dp</dimen>
+    <dimen name="dimen_atv_manual_menu_item_height">50dp</dimen>
+    <dimen name="dimen_atv_manual_menu_item_name">130dp</dimen>
+    <dimen name="dimen_atv_manual_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_atv_manual_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_atv_manual_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_atv_manual_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_atv_manual_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_atv_manual_menu_item_arrows_height">20dp</dimen>
+    
+    
+    <!-- dtv_manual -->
+    <dimen name="dimen_dtv_manual_menu_item_width">340dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_height">50dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_name">150dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_bar_width">150dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_arrows_height">20dp</dimen>
+    
+    
+    <!-- dtv signalinfo -->
+    <dimen name="dimen_signalinfo_menu_item_width">370dp</dimen>
+    <dimen name="dimen_signalinfo_menu_item_height">50dp</dimen>
+    <dimen name="dimen_signalinfo_menu_item_name">220dp</dimen>
+    <dimen name="dimen_signalinfo_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_signalinfo_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_signalinfo_menu_bar_height">10dp</dimen>
+    
+    <!-- pvr option -->
+    <dimen name="dimen_pvr_option_menu_item_width">380dp</dimen>
+    <dimen name="dimen_pvr_option_menu_item_height">50dp</dimen>
+    <dimen name="dimen_pvr_option_menu_item_name">140dp</dimen>
+    <dimen name="dimen_pvr_option_menu_item_indicator">200dp</dimen>
+    
+    
+    <!-- program edit -->
+    <dimen name="dimen_proedit_listview_item_width">480dp</dimen>
+    <dimen name="dimen_proedit_listview_item_height">55dp</dimen>
+    <dimen name="dimen_proedit_listview_item_number">100dp</dimen>
+    <dimen name="dimen_proedit_listview_item_data">150dp</dimen>
+    <dimen name="dimen_proedit_listview_item_indicator">150dp</dimen>
+    
+    <dimen name="dimen_channellist_listview_item_width">420dp</dimen>
+    <dimen name="dimen_channellist_listview_item_indicator">90dp</dimen>
+    
+    <dimen name="dimen_dtv_manual_menu_item_img_width">30dp</dimen>
+    <dimen name="dimen_dtv_manual_menu_item_img_height">30dp</dimen>
+    
+    <!-- sound menu -->
+    <dimen name="dimen_hotel_menu_item_width">340dp</dimen>
+    <dimen name="dimen_hotel_menu_item_height">50dp</dimen>
+    <dimen name="dimen_hotel_menu_item_name">150dp</dimen>
+    <dimen name="dimen_hotel_menu_item_indicator">110dp</dimen>
+    <dimen name="dimen_hotel_menu_bar_width">110dp</dimen>
+    <dimen name="dimen_hotel_menu_bar_height">10dp</dimen>
+    <dimen name="dimen_hotel_menu_bar_indicator">40dp</dimen>
+    <dimen name="dimen_hotel_menu_item_arrows_width">20dp</dimen>
+    <dimen name="dimen_hotel_menu_item_arrows_height">20dp</dimen>
+    
+    <!-- dtv audio language -->
+    <dimen name="dimen_audio_language_item_width">470dp</dimen>
+    <dimen name="dimen_audio_language_item_height">55dp</dimen>
+    <dimen name="dimen_audio_language_item_name">100dp</dimen>
+    <dimen name="dimen_audio_language_item_indicator">220dp</dimen>
+    
+    <dimen name="dimen_audio_language_item_mode">100dp</dimen>
+    <dimen name="dimen_audio_language_item_type">100dp</dimen>
+    <dimen name="dimen_audio_language_item_iso">100dp</dimen>
+    <dimen name="dimen_audio_language_item_mode_height">40dp</dimen>
+    
+    <dimen name="dimen_audio_language_item_arrows_width">50dp</dimen>
+    <dimen name="dimen_audio_language_item_arrows_height">50dp</dimen>
+    
+    <!-- subtitle language list -->
+    <dimen name="dimen_subtitle_language_item_width">420dp</dimen>
+    <dimen name="dimen_subtitle_language_item_height">55dp</dimen>
+    <dimen name="dimen_subtitle_language_item_name">150dp</dimen>
+    
+    <!-- set password dialog -->
+    <dimen name="dimen_setpwd_item_width">440dp</dimen>
+    <dimen name="dimen_setpwd_item_height">50dp</dimen>
+    <dimen name="dimen_setpwd_item_name">180dp</dimen>
+    <dimen name="dimen_setpwd_item_indicator">110dp</dimen>
+    
+</resources>

@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">SmartHotelModel</string>
+
+    <!-- **************************new add 	start************************** -->
+    <!-- 第一级菜单 -->
+    <string name="menu_title">Menu</string>
+    <string name="menu_picutre">Picture</string>
+    <string name="menu_sound">Sound</string>
+    <string name="menu_channel">Channel</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_control">Parental Control</string>
+    
+    
+    <!-- for option menu -->
+    <string name="option_menu_title">Option Menu</string>
+    <string name="str_menu_option">OPTION</string>
+    <string name="menu_option_hdr">HDR</string>
+    <string name="str_hdr_hdrmode">HDR</string>
+
+    <string-array name="str_arr_option_caption">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_option_closed_caption">
+        <item>Off</item>
+        <item>On</item>
+        <item>On When Muted</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>TEXT1</item>
+        <item>TEXT2</item>
+        <item>TEXT3</item>
+        <item>TEXT4</item>
+    </string-array>
+    
+    
+    <string name="str_cha_software_update_usb">Software Update (USB)</string>
+    
+    <string-array name="setting_lock_system_vals">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    
+    <string name="str_pc_image_mode_title">PC Image Mode</string>
+    <string name="str_dtv_manual_channel_flag">CH</string>
+    <string name="str_autotuning_title">Choose  Country</string>
+    <string name="str_dialog_tip">Tip</string>
+    
+    <string name="softupdate_info">Please insert the USB storage device which has the correct firmware file in it, and select “YES” for upgrade.</string>
+    <string name="str_reboot_wait">Rebooting! Please Wait...</string>
+    <string name="str_update_wait">Please Waiting!</string>
+    <string name="str_update_start">Start</string>
+    <string-array name="str_arr_update_status">
+        <item>Fail!</item>
+        <item>Success!</item>
+        <item>Upgrade file not found!</item>
+        <item>Please insert a USB memory device!</item>
+    </string-array>
+    
+    <string name="str_signalhear">To save energy,after 5s the TV will switch off the screen.To watch tv again,press a key on the remote control.</string>
+    
+    <!-- ktc nathan.liao2014.08.30 for factory remote start.needn't translated -->
+    <string name="str_factory_agemode_open">Age mode open</string>
+    <string name="str_factory_agemode_close">Age mode close</string>
+    <string name="str_factory_channelpreset_suc">Channel preset success</string>
+    <string name="pppoe_connect_success">PPPOE dial-up success.</string>
+    <string name="str_factory_wire_connect">Wire Connect</string>
+    <string name="str_factory_ipaddress">IP Address</string>
+    <string name="str_factory_ipaddress_error">IP Address set error</string>
+    <string name="ip_address">IP address</string>
+    <string name="subnet_mask">Subnet mask</string>
+    <string name="default_geteway">Default geteway</string>
+    <string name="forget">forget</string>
+    <string name="first_dns">First dns</string>
+    <string name="second_dns">Second dns</string>
+    <string name="connect_state">Connected to</string>
+    <string name="is_scanning">is scanning...</string>
+    <string name="eth_enable">Cable network card can not use</string>
+    <string name="eth_able">Cable network card can use</string>
+    <string name="str_factory_wireMac">MAC address of the wired network</string>
+    <string name="str_factory_wireMac_close">Close</string>
+    <string name="str_factory_writeMacAddress">Write MAC Address</string>
+    <string name="str_factory_writeMacSuc">Write MAC address success!Pls reboot the TV</string>
+    <string name="str_factory_noMacfile">no excited mac.bin file</string>
+    <string name="str_factory_readFileError">read mac.bin file error</string>
+    <string name="str_factory_dataOverRetangle">Data exceeds the address range, check mac.bin file</string>
+    <string name="str_factory_write_mac_waiting">MAC addresses are burning, please wait!</string>
+    <string name="str_factory_reset_error">Sorry,factory reset error!</string>
+    <string name="str_reset_info">Please wait...</string>
+    <string name="str_being_reset">Being reset...</string>
+    <!-- ktc nathan.liao2014.08.30 for factory remote end.don't translated -->
+    
+    <!-- ktc nathan.liao add  hotelmenu add start -->
+    <string name="str_hotel_menu">HOTEL MENU</string>
+    <string name="str_ch_lock">CH LOCK</string>
+    <string name="str_max_vol">MAX VOL</string>
+    <string name="str_auto_set">AUTO SET</string>
+    <string name="str_picture_mode">PICTURE MODE</string>
+    <string name="str_power_vol">POWER VOL</string>
+    <string name="str_power_source">POWER SOURCE</string>
+    <string name="str_power_ch_number">CH NUMBER</string>
+    <string name="str_lock_ch_num">LOCK CH NUM</string>
+    <string name="str_lock_ch">LOCK</string>
+    <string name="str_key_lock">KEY LOCK</string>
+    <string name="str_logo_set">Logo Set</string>
+    <string name="str_logo_set_value">Change Logo</string>
+    <string name="str_clone">Clone</string>
+    <string name="str_backup">Backup</string>
+    <string name="str_restore">Restore</string>
+    <string name="str_logo_restore">Logo Restore</string>
+    <string name="str_logo_cancel">Cancel</string>
+    <string name="str_logo_reset_info">LOGO RESET?</string>
+    <string name="str_logo_reset_result_info">Logo reset success!!!</string>
+    <string name="str_logo_reset_mistake_info_limit">File is large!!</string>
+    <string name="str_logo_reset_mistake_info_no_file">No logo file exit!!!</string>
+
+    <string-array name="str_arr_hotelmennu_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_chlock_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_keylock_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="backup_successed">Backup successed</string>
+    <string name="backup_failed">Backup failed</string>
+    <string name="restore_successed">Restore successed</string>
+    <string name="restore_failed">Restore failed</string>
+    <string name="str_logo_restore_success">Logo Restore success</string>
+    
+    
+    <string name="str_menu_reset_dialog_message">Are you sure?</string>
+    <string name="str_menu_reset_dialog_confirm">Yes</string>
+    <string name="str_menu_reset_dialog_cancel">No</string>
+    
+    <string-array name="hotelmenu_arr_dtmb_input_source_vals">
+        <item>ATV</item>
+        <item>DTV</item>
+        <item>AV</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+    </string-array>
+    
+   <!-- For Picture -->
+    <string name="str_auto_adjust">Auto Adjusting</string>
+    <string name="str_pic_picture_adjustment">Imageadjust</string>
+    <string name="str_pic_picture">Picture</string>
+    <string name="str_pic_picturemode">Picture Mode</string>
+
+    <string-array name="str_arr_pic_picturemode_vals">
+        <item>Standard</item>
+        <item>Bright</item>
+        <item>Soft</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="str_pic_contrast">Contrast</string>
+    <string name="str_pic_brightness">Brightness</string>
+    <string name="str_pic_color">Color</string>
+    <string name="str_pic_sharpness">Sharpness</string>
+    <string name="str_pic_hue">Hue</string>
+    <string name="str_pic_saturation">Saturation</string>
+    <string name="str_pic_autobacklight">Auto BackLight</string>
+    <string name="str_pic_backlight">Back Light</string>
+    <string name="str_pic_colortemperature">Color Temperature</string>
+
+    <string-array name="str_arr_pic_colortemperature_vals">
+        <item>Cold</item>
+        <item>Standard</item>
+        <item>Warm</item>
+    </string-array>
+
+    <string name="str_pic_colortemperature_red">Red</string>
+    <string name="str_pic_colortemperature_green">Green</string>
+    <string name="str_pic_colortemperature_blue">Blue</string>
+
+    <string name="str_pic_zoommode">Zoom Mode</string>
+
+    <string-array name="str_arr_pic_zoommode_vals">
+        <item>Auto</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>Film</item>
+        <item>Subtitle</item>
+        <item>PC Mode</item>
+    </string-array>
+
+    <string name="str_pic_imgnoisereduction">Image Noise Reduction</string>
+    <string name="str_pic_mpegnoisereduction">MPEG Noise Reduction</string>
+
+    <string-array name="str_arr_pic_imgnoisereduction_vals">
+        <item>Off</item>
+        <item>Weak</item>
+        <item>Middle</item>
+        <item>Strong</item>
+    </string-array>
+    <string-array name="str_arr_pic_mpegnoisereduction_vals">
+        <item>Off</item>
+        <item>Weak</item>
+        <item>Middle</item>
+        <item>Strong</item>
+    </string-array>
+
+    <string name="str_pic_openhdr">Open HDR</string>
+    <string-array name="str_arr_openhdr_vals">
+        <item>Off</item>
+        <item>Auto</item>
+        <item>Low</item>
+        <item>Middle</item>
+        <item>High</item>
+        <item>Ref. Mode</item>
+    </string-array>
+    <string name="str_hdr_tip">Valid only when HDMI EDID version is 2.0</string>
+
+    <string-array name="str_arr_sleep_mode_vals">
+        <item>Off</item>
+        <item>10 Minute</item>
+        <item>20 Minute</item>
+        <item>30 Minute</item>
+        <item>60 Minute</item>
+        <item>90 Minute</item>
+        <item>120 Minute</item>
+        <item>180 Minute</item>
+        <item>240 Minute</item>
+    </string-array>
+    <string name="str_setting_sleep_mode_remin_min">Min</string>
+    <string-array name="str_arr_pvr_mode_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_pic_pcimagemode">PC Image Mode</string>
+    <string name="str_pic_autotune">Auto Adjust</string>
+    <string name="str_set_hdmicec_arc">HDMI_ARC</string>
+    <string name="str_pic_pcimagemode_waiting">PC image is adjusting, please try later...</string>
+    <string name="str_pic_pcimagemode_success">PC image adjusted success</string>
+    <string name="str_pic_pcimagemode_failed">PC image adjusted fail</string>
+
+    <!-- for pc image mode -->
+
+    <string name="str_pic_clock">Clock</string>
+    <string name="str_pic_phase">Phase</string>
+    <string name="str_pic_horizontal_pos">Horizontal Position</string>
+    <string name="str_pic_vertical_pos">Vertical Position</string>
+
+    <!-- sound menu -->
+
+    <string name="str_sound_sound_adjustment">Sound Mode</string>
+    <string name="str_sound_soundmode">Sound Mode</string>
+
+    <string-array name="str_arr_sound_soundmode_vals">
+        <item>Standard</item>
+        <item>Music</item>
+        <item>Movie</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="str_sound_bass">Low Pitch</string>
+    <string name="str_sound_treble">High Pitch</string>
+    <string name="str_sound_equalizer">Equilizer</string>
+    <string name="str_sound_equalizer120hz">120Hz</string>
+    <string name="str_sound_equalizer500hz">500Hz</string>
+    <string name="str_sound_equalizer1.5khz">1.5KHz</string>
+    <string name="str_sound_equalizer5khz">5KHz</string>
+    <string name="str_sound_equalizer10khz">10KHz</string>
+    <string name="str_sound_balance">Balance</string>
+    <string name="str_sound_avc">AVC</string>
+    <string name="str_sound_vd">Video Description</string>
+    <string name="str_sound_ad">AD Switch</string>
+    <string name="str_sound_ad_volume">AD Volume</string>
+    <string name="str_sound_ad_mixerbalance">AD Mixer Balance</string>
+    <string-array name="str_arr_sound_ad_mixerbalance_vals">
+        <item>Main Max</item>
+        <item>Main 75%</item>
+        <item>Equal</item>
+        <item>AD 75%</item>
+        <item>AD Max</item>
+    </string-array>
+
+    <string name="str_sound_autohoh">Auto HOH</string>
+    <string name="str_sound_truehdbypass">Dolby TrueHD/DTS-HD</string>
+    <string name="str_sound_srs">SRS</string>
+
+    <string-array name="str_arr_sound_vd_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="str_arr_sound_avc_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_sound_surround">Surround</string>
+
+    <string-array name="str_arr_sound_surround_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_sound_spdifoutput">SPDIF Output</string>
+
+    <string-array name="str_arr_sound_spdifoutput_vals">
+        <item>PCM</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string name="str_sound_separatehear">Alone</string>
+
+    <string-array name="str_arr_sound_separatehear_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <!-- For 3d -->
+
+    <string name="str_3d_3d">3D</string>
+
+    <string name="str_3d_self_adaptive_detecttriple">3D Self Detect</string>
+    <string-array name="str_arr_3d_self_adaptive_detecttriple_vals">
+        <item>Off</item>
+        <item>Right Now</item>
+        <item>When Source Change</item>
+        <item>Real Time</item>
+    </string-array>
+
+    <string name="str_3dto2d_self_adaptive_detecttriple">3D-2D Self Detect</string>
+    <string-array name="str_arr_3dto2d_self_adaptive_detecttriple_vals">
+        <item>Off</item>
+        <item>Right Now</item>
+    </string-array>
+
+    <string name="str_3d_self_adaptive_detectlevel">SelfAdaptive Level</string>
+
+    <string-array name="str_arr_3d_self_adaptive_detectlevel_vals">
+        <item>Low</item>
+        <item>Middle</item>
+        <item>High</item>
+    </string-array>
+
+    <string name="str_3d_conversion">3D Conversion</string>
+
+    <string-array name="str_arr_3d_3dconversion_vals">
+       <item>None</item>
+        <item>SBS</item>
+        <item>TB</item>
+        <item>FP</item>
+        <item>FP_720P</item>
+        <item>LA</item>
+        <item>FA</item>
+        <item>FIELD_ALTERNATIVE</item>
+        <item>CB</item>
+        <item>2D-3D</item>
+        <item>DUALVIEW</item>
+        <item>PA</item>
+        <item>4K2K_VIDEO_SPLIT</item>
+        <item>FRAME_L</item>
+        <item>FRAME_R</item>
+    </string-array>
+
+    <string name="str_3d_3dto2d">3Dto2D</string>
+
+    <string-array name="str_arr_3d_3dto2d_vals">
+       <item>None</item>
+        <item>SBS</item>
+        <item>TB</item>
+        <item>FP</item>
+        <item>FP_720P</item>
+        <item>LA</item>
+        <item>FA</item>
+        <item>FIELD_ALTERNATIVE</item>
+        <item>CB</item>
+        <item>2D-3D</item>
+        <item>DUALVIEW</item>
+        <item>PA</item>
+        <item>4K2K_VIDEO_SPLIT</item>
+        <item>FRAME_L</item>
+        <item>FRAME_R</item>
+    </string-array>
+
+    <string name="str_3d_3ddepth">3D Depth</string>
+
+    <string-array name="str_arr_3d_3ddepth_vals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="str_3d_3doffset">3D Offset</string>
+
+    <string-array name="str_arr_3d_3doffset_vals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="str_3d_autostart">Auto Start</string>
+
+    <string-array name="str_arr_3d_autostart_vals">
+        <item>Off</item>
+        <item>2D</item>
+        <item>3D</item>
+    </string-array>
+
+    <string name="str_3d_3doutputaspect">3D Output Aspect</string>
+
+    <string-array name="str_arr_3d_3doutputaspect_vals">
+        <item>Full</item>
+        <item>4:3</item>
+    </string-array>
+
+    <string name="str_3d_lrswitch">LR View Switch</string>
+
+    <string-array name="str_arr_3d_lrswitch_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <!-- for Channel -->
+    <string name="str_prompt_setup_wizard_title">Please Select Antenna Type and Start AutoScan</string>
+    <string name="str_prompt_setup_wizard_next">Next</string>
+    <string name="str_prompt_setup_wizard_skip">Skip</string>
+    <string name="str_prompt_setup_location_title">Please select location</string>
+
+    <string name="str_cha_changing_antenna_type">Changing Antenna Type</string>
+    <string name="str_ci_async_cmd_switch_route">CI invoke route switch ...</string>
+    <string name="str_cha_please_wait">Wait a Moment Please</string>
+
+    <string name="str_cha_tv_route_none">NONE</string>
+    <string name="str_cha_tv_route_dvbt">Air</string>
+    <string name="str_cha_tv_route_dvbc">Cable</string>
+    <string name="str_cha_tv_route_dvbs">Satellite</string>
+    <string name="str_cha_tv_route_dvbt2">Air</string>
+    <string name="str_cha_tv_route_dvbs2">Satellite</string>
+    <string name="str_cha_tv_route_dtmb">DTMB</string>
+    <string name="str_cha_tv_route_unknown">Unknown</string>
+
+    <string name="str_cha_channel">Channel</string>
+    <string name="str_cha_autotuning">Auto Tuning</string>
+    <string name="str_cha_dtvmanualtuning">DTV Manual Tuning</string>
+    <string name="str_cha_atvmanualtuning">ATV Manual Tuning</string>
+    <string name="str_cha_atvmanualtuning_save_success">Save success !</string>
+    <string name="str_cha_atvmanualtuning_save_wait">Save failed , please wait channel refresh !</string>
+    <string name="str_cha_atvmanualtuning_save_fail">Save failed , this channel has no signal !</string>
+    <string name="str_cha_autotuning_warnning">Wait for a moment please!</string>
+    <string name="str_cha_bandwidth_switch">Bandwidth Switch</string>
+    <string name="str_cha_bandwidth_uhf_7mhz">7MHz over UHF</string>
+    <string name="str_cha_programedit">Program Edit</string>
+    <string name="str_cha_signalinfo">Signal Information</string>
+    <string name="str_cha_ciinformation">CI Information</string>
+    <string name="str_cha_software_update_oad">Software Update (OAD)</string>
+    <string name="str_cha_time_to_search_for_ssu">Time to Search for SSU</string>
+    <string name="str_cha_time_to_search_for_ssu_default">4:00</string>
+    <string name="str_cha_oadscan">OAD Scan</string>
+    <string name="str_cha_oad_view_prompt">View Prompt to Update</string>
+    <string name="str_mainmenu_menu">Menu</string>
+    <string name="str_cha_autotuning_tuningtype">Search Type</string>
+    <string name="str_cha_autotuning_tuningtype_atv">ATV</string>
+    <string name="str_cha_autotuning_country_australia">Australia</string>
+    <string name="str_cha_autotuning_country_austria">Austria</string>
+    <string name="str_cha_autotuning_country_beligum">Beligum</string>
+    <string name="str_cha_autotuning_country_bulgaral">Bulgaral</string>
+    <string name="str_cha_autotuning_country_croatia">Croatia</string>
+    <string name="str_cha_autotuning_country_czech">Czech</string>
+    <string name="str_cha_autotuning_country_denmark">Denmark</string>
+    <string name="str_cha_autotuning_country_finland">Finland</string>
+    <string name="str_cha_autotuning_country_france">France</string>
+    <string name="str_menu_parentalcontrol">Parental Control</string>
+    <string name="str_lock_system">Lock System</string>
+    <string name="str_lock">Lock/Unlock</string>
+    <string name="str_lock_system_tip_enter">OK : Confirm</string>
+    <string name="str_set_pwd">Set Password</string>
+    <string name="str_block_program">Block Program</string>
+    <string name="str_parental_contentlock">Content Lock</string>
+    <string name="str_parental_guidance">Parental Guidance</string>
+    <string name="str_cha_dtv_title">DTV</string>
+    <string name="str_cha_radio_title">RADIO</string>
+    <string name="str_cha_data_title">DATA</string>
+    <string name="str_cha_atv_title">ATV</string>
+    <string name="str_ci_cam_pincode">CI CAM Pin Code</string>
+    <string name="str_ci_set_cam_pincode_done">Set Pin Code Done</string>
+    <string name="str_block_program_wait_tip">Please wait for channel refresh !</string>
+
+    <string-array name="str_arr_signalinfo_qam_cab">
+        <item>16QAM</item>
+        <item>32QAM</item>
+        <item>64QAM</item>
+        <item>128QAM</item>
+        <item>256QAM</item>
+    </string-array>
+
+    <string-array name="str_arr_signalinfo_qam_dvbt">
+        <item>QPSK</item>
+        <item>16QAM</item>
+        <item>64QAM</item>
+        <item>256QAM</item>
+    </string-array>
+
+    <string name="str_cha_channeltuning">Channel Tuning</string>
+    <string name="str_cha_tv">TV :</string>
+    <string name="str_cha_tv_0">0</string>
+    <string name="str_cha_dtv">DTV :</string>
+    <!-- For CA String define -->
+    <string name="str_cha_cainformation">CA Information</string>
+    <string name="str_ca_title">CA Information</string>
+    <string name="str_ca_card_info">CA Information</string>
+    <string name="str_ca_card_management">CA Management</string>
+    <string name="str_ca_card_paired">Card Paired</string>
+    <string name="str_ca_card_feed">Card Feed</string>
+    <string name="str_ca_info_title">CA Card Information</string>
+    <string name="str_ca_info_entitle">CA Entitle Information</string>
+    <string name="str_ca_info_detitle">CA Detitle Information</string>
+    <string name="str_ca_info_purse_info">CA Slot Information</string>
+    <string name="str_ca_card_version">CAS Version Information</string>
+    <string name="str_ca_mg_title">CA Card Management</string>
+    <string name="str_ca_mg_modify_pin">Modify PIN Of CA Card</string>
+    <string name="str_ca_mg_work_time">Modify Work Time Of CA Card</string>
+    <string name="str_ca_mg_watch_level">Modify Watch Level Of CA Card</string>
+    <string name="str_ca_info_pin_title">Modify PIN Of CA Card</string>
+    <string name="str_ca_mg_old_pin">Please input the old PIN:</string>
+    <string name="str_ca_mg_new_pin">Please input the new PIN:</string>
+    <string name="str_ca_mg_new_pin2">Please confirm the new PIN:</string>
+    <string name="str_ca_mg_submit">Submit</string>
+    <string name="str_set_work_time_title">CA work time setting</string>
+    <string name="str_ca_start_work_time">Please set start time:</string>
+    <string name="str_ca_end_work_time">Please set end time:</string>
+    <string name="str_ca_work_time_pin">Please input PIN code:</string>
+    <string name="str_work_time_hour_text">Hour</string>
+    <string name="str_work_time_minute_text">Minute</string>
+    <string name="str_watch_level_title">Watch Level Setting</string>
+    <string name="str_watch_level_text">Watch Level:</string>
+    <string name="str_watch_level_init">0</string>
+    <string name="str_ca_operator_title">Operator List</string>
+    <string name="str_ca_op_id">ID</string>
+    <string name="str_ca_op_operator_id">Operator ID</string>
+    <string name="str_ca_version_title">CA Version Information</string>
+    <string name="str_ca_version_id">CDCAS Version ID:</string>
+    <string name="str_ca_version_stb_num">STB Number:</string>
+    <string name="str_ca_card_id">Card ID:</string>
+    <string name="str_ca_entitle_title">CA Entitle Information</string>
+    <string name="str_ca_entitle_id">Product ID</string>
+    <string name="str_ca_entitle_video_id">Video Function</string>
+    <string name="str_ca_entitle_date">Expiration Date</string>
+    <string name="str_ca_entitle_video_flag_yes">Yes</string>
+    <string name="str_ca_entitle_video_flag_no">No</string>
+    <string name="str_ca_detitle_title">CA Detitle Information</string>
+    <string name="str_ca_detitle_list">CA Detitle Code List</string>
+    <string name="str_ca_detitle_state">CA Detitle State</string>
+    <string name="str_ca_detitle_state_yes">Yes</string>
+    <string name="str_ca_detitle_state_no">No</string>
+    <string name="str_ca_purse_title">CA Slot Information</string>
+    <string name="str_ca_purse_id">Slot ID</string>
+    <string name="str_ca_purse_points">Spend points</string>
+    <string name="str_ca_purse_credit">Credit line</string>
+
+    <!-- For CA Error Type define -->
+    <string name="st_ca_rc_ok">The upgrade test card passed the test</string>
+    <string name="st_ca_rc_unknown">Unknown error</string>
+    <string name="st_ca_rc_pointer_invalid">Invalid pointer</string>
+    <string name="st_ca_rc_card_invalid">Invalid smart card</string>
+    <string name="st_ca_rc_pin_invalid">Invalid PIN</string>
+    <string name="st_ca_rc_dataspace_small">Not enough space</string>
+    <string name="st_ca_rc_card_pairother">Smart card already paired with other Set-top-box</string>
+    <string name="st_ca_rc_data_not_find">Data required is not found</string>
+    <string name="st_ca_rc_prog_status_invalid">Status of the program you want to buy is invalid</string>
+    <string name="st_ca_rc_card_no_room">No space in the smart card to save the program</string>
+    <string name="st_ca_rc_worktime_invalid">The work period you set is invalid</string>
+    <string name="st_ca_rc_ippv_canntdel">IPPV program cannot be deleted</string>
+    <string name="st_ca_rc_card_nopair">The smart card is not paired with any Set-top-box</string>
+    <string name="st_ca_rc_watchrating_invalid">The program rating you set is invalid</string>
+    <string name="st_ca_rc_card_notsupport">The smart card does not support this function</string>
+    <string name="st_ca_rc_data_error">Data error! Smart card is rejected</string>
+    <string name="st_ca_rc_feedtime_not_arrive">It is not feeding time yet. Cannot feed daughter card</string>
+    <string name="st_ca_rc_card_typeerror">Feeding between mother card and daughter card failed. Wrong smart card type</string>
+    <string name="st_ca_rc_cas_failed">Fail to excute card-issuing CAS command</string>
+    <string name="st_ca_rc_oper_failed">Fail to excute card-issuing operator command</string>
+    <string name="st_ca_rc_pin_len">Pin code less than 6 digits</string>
+    <string name="st_ca_rc_diff_pin">Pin code do not accord</string>
+
+    <!-- For CA notify Type define -->
+    <string name="st_ca_message_cancel_type">Cancel the current display</string>
+    <string name="st_ca_message_badcard_type">Cannot recognize the card</string>
+    <string name="st_ca_message_expicard_type">The smart card expired. Please change the new card</string>
+    <string name="st_ca_message_insertcard_type">Scrambled program. Please insert the smart card</string>
+    <string name="st_ca_message_nooper_type">No operator available in the card</string>
+    <string name="st_ca_message_blackout_type">Conditionally blocked</string>
+    <string name="st_ca_message_outworktime_type">Was set at the current time can\'t watch</string>
+    <string name="st_ca_message_watchlevel_type">Program rating is higher than the configured watch-rating</string>
+    <string name="st_ca_message_pairing_type">The smart card is not paired with this Set-top-box</string>
+    <string name="st_ca_message_noentitle_type">No authorization</string>
+    <string name="st_ca_message_decryptfail_type">Fail to decrypt the program</string>
+    <string name="st_ca_message_nomoney_type">Insufficient balance in the card</string>
+    <string name="st_ca_message_errregion_type">Wrong location setting</string>
+    <string name="st_ca_message_needfeed_type">The daughter card shall be paired with the mother card. Please insert the mother card</string>
+    <string name="st_ca_message_errcard_type">Fail to verify the smart card. Please contact the operator</string>
+    <string name="st_ca_message_update_type">Upgrading the smart card. Please do not plug off the card or power off the TV</string>
+    <string name="st_ca_message_lowcardver_type">Please upgrade the smart card</string>
+    <string name="st_ca_message_viewlock_type">Do not switch channels frequently</string>
+    <string name="st_ca_message_maxrestart_type">The smart card is in sleep mode. Please resart  5 minutes later</string>
+    <string name="st_ca_message_freeze_type">The smart card is frozen. Please contact your operator</string>
+    <string name="st_ca_message_callback_type">The smart card is suspended. Please return your watching history to your operator</string>
+    <string name="st_ca_message_curtain_type">Curtain program. Preview is not allowed.</string>
+    <string name="st_ca_message_cardteststart_type">Testing the upgrade test card...</string>
+    <string name="st_ca_message_cardtestfaild_type">The upgrade test card failed in test. Please check the communication between the TV and card.</string>
+    <string name="st_ca_message_cardtestsucc_type">The upgrade test card passed the test</string>
+    <string name="st_ca_message_nocaliboper_type">No customized operator for portability library in the card</string>
+    <string name="st_ca_message_stblocked_type">Please restart the Set-top-box</string>
+    <string name="st_ca_message_stbfreeze_type">Set-top-box is frozen</string>
+
+    <!-- for dtv auto tune option -->
+    <string-array name="strs_cha_dtvautotuning_dvbc_tuning_mode">
+        <item>Full Scan</item>
+        <item>Quick Scan</item>
+    </string-array>
+
+    <string-array name="strs_cha_dtvautotuning_demodulation_tbl">
+        <item>16 QAM</item>
+        <item>32 QAM</item>
+        <item>64 QAM</item>
+        <item>128 QAM</item>
+        <item>256 QAM</item>
+    </string-array>
+
+    <string name="str_cha_dtvautotuning_startscan">Start Scan</string>
+    <string name="str_cha_dtvautotuning_frequency">Frequency</string>
+    <string name="str_cha_dtvautotuning_modulation">Modulation</string>
+    <string name="str_cha_dtvautotuning_symbol">Symbol</string>
+    <string name="str_cha_dtvautotuning_networkid">Network ID</string>
+    <string name="str_cha_dtvautotuning_networkid_invalid">NetworkID Invalid</string>
+    <string name="str_cha_dtvautotuning_ok">ok</string>
+    <string name="str_cha_dtvautotuning_auto">Auto</string>
+    <string name="str_cha_dtvautotuning_signalstrength">Signal Strength</string>
+    <string name="str_cha_dtvautotuning_signalquality">Signal Quality</string>
+    <string name="str_cha_dvbsdtvtuning_scanmode">Scan Mode</string>
+    <string name="str_cha_dvbsdtvtuning_servicetype">Service Type</string>
+    <string name="str_cha_dvbsdtvtuning_networksearch">Network Search</string>
+    <string name="str_cha_dvbsdtvtuning_transponder">Transponder</string>
+    <string name="str_cha_dvbsdtvtuning_satellite">Satellite</string>
+    <string name="str_cha_dvbsdtvtuning_searchtype">Search Option</string>
+    <string name="str_cha_radio">RADIO :</string>
+    <string name="str_cha_data">DATA :</string>
+    <string name="str_cha_program">Programmes</string>
+    <string name="str_cha_tuningprogress_percent_0">0%</string>
+    <string name="str_cha_tuningprogress_uhf">UHF</string>
+    <string name="str_cha_tuningprogress_vhf">VHF</string>
+    <string name="str_cha_tuningprogress_ch">CH</string>
+    <string name="str_cha_tuningprogress_freq">Freq</string>
+    <string name="str_cha_tuningprogress_dtv">DTV</string>
+    <string name="str_cha_exittuning_info">Are you sure to exit DTV tuning?</string>
+    <string name="str_cha_exitDTVtuning_info">Are you sure to exit DTV tuning? </string>
+    <string name="str_cha_exitATVtuning_info">Are you sure to exit ATV tuning? </string>
+    <string name="str_cha_exittuning_yes">YES</string>
+    <string name="str_cha_exittuning_no">NO</string>
+    <string name="str_cha_dtvmanualtuning_channelno">Channel</string>
+    <string name="str_cha_dtvmanualtuning_ch">CH</string>
+    <string name="str_cha_dtvmanualtuning_ch_1">1</string>
+    <string name="str_cha_dtvmanualtuning_modulation_64qam">64QAM</string>
+    <string name="str_cha_dtvmanualtuning_frequency">Frequency</string>
+    <string name="str_cha_dtvmanualtuning_frequency_khz">KHz</string>
+    <string name="str_cha_dtvmanualtuning_modulation">Modulation</string>
+    <string name="str_cha_dtvmanualtuning_symbol">Symbol Rate</string>
+    <string name="str_cha_dtvmanualtuning_starttuning">Press “OK” to search</string>
+    <string name="str_cha_dtvmanualtuning_starttuning_ing">Search...</string>
+    <string name="str_cha_dtvmanualtuning_signalstrength">Signal Strength</string>
+    <string name="str_cha_dtvmanualtuning_signalquality">Signal Quality</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_dtv">DTV:</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_0">0</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_radio">RADIO:</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_data">DATA:</string>
+    <string name="str_cha_atvmanualtuning_channelno">Channel</string>
+    <string name="str_cha_atvmanualtuning_store_channelno">Store To:</string>
+    <string name="str_cha_atvmanualtuning_ch">CH</string>
+    <string name="str_cha_atvmanualtuning_channel_1">1</string>
+    <string name="str_cha_atvmanualtuning_colorsystem">Color System</string>
+    <string name="str_cha_atvmanualtuning_colorsystem_Auto">Auto</string>
+    <string name="str_cha_atvmanualtuning_soundsystem">Sound System</string>
+    <string name="str_cha_atvmanualtuning_soundsystem_Auto">Auto</string>
+    <string name="str_cha_atvmanualtuning_starttuning">Search</string>
+    <string name="str_cha_atvmanualtuning_starttuning_ing">Search...</string>
+    <string name="str_cha_atvmanualtuning_fine_tune">Fine Tune</string>
+    <string name="str_cha_atvmanualtuning_frequency">Frequency</string>
+    <string name="str_cha_atvmanualtuning_frequency_427">427</string>
+    <string name="str_cha_atvmanualtuning_frequency_mhz">MHz</string>
+    <string name="str_cha_dtvmanualtuning_galaxy">GALAXY</string>
+    <string name="str_cha_dtvmanualtuning_polarization">Polarization</string>
+    <string name="str_cha_dtvmanualtuning_network">Network</string>
+    <string name="str_cha_dtvmanualtuning_scan_mode">Scan Mode</string>
+    <string name="str_cha_dtvmanualtuning_service_type">Service type</string>
+    <string name="str_cha_transport_stream">Transport stream</string>
+    <string name="str_cha_service">Service</string>
+    <string name="str_cha_save">Save</string>
+    <string name="str_cha_software_version">OAD Software Version</string>
+    <string name="str_demo_demo">Demo</string>
+    <string name="str_demo_mwe">MWE</string>
+    <string name="str_demo_dbc">DBC</string>
+    <string name="str_demo_off">Off</string>
+    <string name="str_demo_dlc">DLC</string>
+    <string name="str_demo_dcc">DCC</string>
+    <string name="str_demo_nr">Picture NR</string>
+    <string name="str_demo_uclear">Ultra Clear</string>
+
+    <string-array name="str_arr_dtvmanualtuning_polarization_vals">
+        <item>Vertical Position</item>
+        <item>Horizontal Position</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_network_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_scan_mode_vals">
+        <item>Free</item>
+        <item>Free+Scramble</item>
+        <item>Scramble</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_service_type_vals">
+        <item>DTV</item>
+        <item>DTV+Radio</item>
+        <item>Radio</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_lnbtype_vals">
+        <item>C</item>
+        <item>Ku</item>
+    </string-array>
+    <string-array name="str_arr_mwe_text">
+        <item>Off</item>
+        <item>Optimize</item>
+        <item>Enhence</item>
+        <item>Side By Side</item>
+        <item>Dynamic</item>
+        <item>Center</item>
+        <item>Square Move</item>
+    </string-array>
+    <string-array name="str_arr_demo_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    
+    <string name="str_list_menu_hint_b_skip">1 : Skip</string>
+    <string name="str_list_menu_hint_g_fivorite">2 : Favorite</string>
+    <string name="str_list_menu_hint_r_delete">3 : Delete</string>
+    <string name="str_list_menu_hint_y_move">4 : Move</string>
+    <string name="str_list_menu_hint_g_edit">5 : Edit</string>
+    <string name="str_atv_edit_dialog_tip">Channel Name</string>
+    <string name="str_atv_edit_dialog_empty">Please enter valid content!</string>
+
+    <!-- for audio language list -->
+    <string name="str_audio_language_title">Audio Language</string>
+    <string name="str_audio_language_exit_tip">Exit</string>
+    <string-array name="str_arr_setting_audio_type_iso_text">
+        <item></item>
+        <item>C.E</item>
+        <item>H.I.</item>
+        <item>V.I.</item>
+    </string-array>
+    <string-array name="str_array_language_dtmb">
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>German</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Greek</item>
+        <item>French</item>
+        <item>Croatian</item>
+        <item>Italian</item>
+        <item>Hungarian</item>
+        <item>Dutch</item>
+        <item>Norwegian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Mongolian</item>
+        <item>Indonesian</item>
+        <item>Thai</item>
+        <item>Persian</item>
+        <item>Arabic</item>
+        <item>Hebrew</item>
+        <item>Romanian</item>
+        <item>Slovenian</item>
+        <item>Serbian</item>
+        <item>Finnish</item>
+        <item>Swedish</item>
+        <item>Bulgarian</item>
+        <item>Welsh</item>
+        <item>Chinese</item>
+        <item>Irish</item>
+        <item>Korean</item>
+        <item>Japanese</item>
+        <item>Hindi</item>
+        <item>Maori</item>
+        <item>Mandarin</item>
+        <item>Cantonese</item>
+        <item>Turkish</item>
+    </string-array>
+    <string name="str_language_undefined">Undefined</string>
+    <string name="str_language_normal">Track</string>
+    <string name="str_subtitle_close">Close</string>
+    
+    <!-- for subtitle language -->
+    <string name="str_subtitle_language_title">Subtitle Language</string>
+    <string name="str_subtitle_language_title_no">No Subtitle Language</string>
+    <string-array name="str_arr_subtitle_constants">
+        <item>E_CZECH</item>
+        <item>E_DANISH</item>
+        <item>E_GERMAN</item>
+        <item>E_ENGLISH</item>
+        <item>E_SPANISH</item>
+        <item>E_GREEK</item>
+        <item>E_FRENCH</item>
+        <item>E_CROATIAN</item>
+        <item>E_ITALIAN</item>
+        <item>E_HUNGARIAN</item>
+        <item>E_DUTCH</item>
+        <item>E_NORWEGIAN</item>
+        <item>E_POLISH</item>
+        <item>E_PORTUGUESE</item>
+        <item>E_RUSSIAN</item>
+        <item>E_MONGOLIAN</item>
+        <item>E_INDONESIAN</item>
+        <item>E_THAI</item>
+        <item>E_PERSIAN</item>
+        <item>E_ARABIC</item>
+        <item>E_HEBREW</item>
+        <item>E_ROMANIAN</item>
+        <item>E_SLOVENIAN</item>
+        <item>E_SERBIAN</item>
+        <item>E_FINNISH</item>
+        <item>E_SWEDISH</item>
+        <item>E_BULGARIAN</item>
+        <item>E_WELSH</item>
+        <item>E_CHINESE</item>
+        <item>E_IRISH</item>
+        <item>E_KOREAN</item>
+        <item>E_JAPANESE</item>
+        <item>E_HINDI</item>
+        <item>E_MAORI</item>
+        <item>E_MANDARIN</item>
+        <item>E_CANTONESE</item>
+        <item>E_TURKISH</item>
+    </string-array>
+    
+    <!-- for cimmi -->
+    <string name="str_cimmi_title">CIMMI</string>
+    <string name="str_cimmi_hint_ci_inserted">CI INSERTED</string>
+    <string name="str_cimmi_hint_ci_removed">CI REMOVED</string>
+    <string name="str_cimmi_hint_ci_auto_test">CI AUTOTEST</string>
+    <string name="str_cimmi_hint_ci_passwd_hint">INPUT PASSWORD</string>
+    <!-- for current action -->
+    <string name="str_current_action">loading</string>
+
+    <!-- For sound format info-->
+    <string name="str_sound_format_mono">MONO</string>
+    <string name="str_sound_format_dual_a">DUAL A</string>
+    <string name="str_sound_format_dual_ab">DUAL AB</string>
+    <string name="str_sound_format_dual_b">DUAL B</string>
+    <string name="str_sound_format_forced_mono">MONO</string>
+    <string name="str_sound_format_g_stereo">STEREO</string>
+    <string name="str_sound_format_hidev_mono">MONO</string>
+    <string name="str_sound_format_unknown">UNKNOWN</string>
+    <string name="str_sound_format_k_stereo">STEREO</string>
+    <string name="str_sound_format_left_left">LEFT LEFT</string>
+    <string name="str_sound_format_left_right">LEFT RIGHT</string>
+    <string name="str_sound_format_mono_sap">MONO SAP</string>
+    <string name="str_sound_format_nicam_dual_a">NICAM DUAL A</string>
+    <string name="str_sound_format_nicam_dual_ab">NICAM DUAL AB</string>
+    <string name="str_sound_format_nicam_dual_b">NICAM DUAL B</string>
+    <string name="str_sound_format_nicam_mono">NICAM MONO</string>
+    <string name="str_sound_format_nicam_stereo">NICAM STEREO</string>
+    <string name="str_sound_format_right_right">RIGHT RIGHT</string>
+    <string name="str_sound_format_stereo_sap">STEREO SAP</string>
+    <string name="str_sound_format_stereo">STEREO</string>
+
+    <!-- For check password-->
+    <string name="str_check_password_pass">Password Pass</string>
+    <string name="str_check_password_wrong">Wrong Password</string>
+    <string name="str_check_password_invalid">Invalid Action</string>
+    <string name="str_check_password_incorrect">Incorrect Password!</string>
+    <string name="str_check_password_input_number">Please input number ,only number is valid</string>
+
+    <!-- for ci+ op -->
+    <string name="str_ciplus_op_confirmation_title">Confirm CI+ OP Refresh</string>
+    <string name="str_ciplus_op_refresh">Do you allow TV to do operator profile refresh?</string>
+    <string name="str_op_menu_title">Operator Profiles Menu</string>
+    <string name="str_op_channel_list_title">OP Channel List</string>
+    <string name="str_op_menu">OP Menu</string>
+    <string name="str_op_forbid_channel_tuning_content">Forbid to do channel tune under OP mode.\nPlease exit OP mode at first.</string>
+    <string name="str_enter_op">Enter OP</string>
+    <string name="str_exit_op">Exit OP</string>
+    <string name="str_delete_profile">Delete Profile</string>
+    <string name="str_delete_op_msg">Are you sure to delete the operator profile [</string>
+    <string name="str_delete_op_confirm">Confirm to delete OP</string>
+    <string name="str_forbid_channel_tuning">Forbid Channel Tuning</string>
+    <string name="str_cam_upgrade_alarm">CAM is under upgrading.\nPlease try later...</string>
+    <string name="str_op_tuning_alarm">OP is tuning.\nPlease try later...</string>
+
+    <!-- for source info title -->
+    <string name="str_atv_source_title">ATV</string>
+    <string name="str_dtv_source_title">DTV</string>
+    <string name="str_hdmi_source_title">HDMI</string>
+    <string name="str_hdmi2_source_title">HDMI2</string>
+    <string name="str_hdmi3_source_title">HDMI3</string>
+    <string name="str_typc_source_title">TYPE-C</string>
+    <string name="str_vga_source_title">VGA</string>
+    <string name="str_vga2_source_title">VGA2</string>
+    <string name="str_vga3_source_title">VGA3</string>
+    <string name="str_av_source_title">AV</string>
+    <string name="str_cvbs2_source_title">CVBS2</string>
+    <string name="str_cvbs3_source_title">CVBS3</string>
+    <string name="str_cvbs4_source_title">CVBS4</string>
+    <string name="str_cvbs5_source_title">CVBS5</string>
+    <string name="str_cvbs6_source_title">CVBS6</string>
+    <string name="str_cvbs7_source_title">CVBS7</string>
+    <string name="str_cvbs8_source_title">CVBS8</string>
+    <string name="str_svideo_source_title">SVIDEO</string>
+    <string name="str_svideo2_source_title">SVIDEO2</string>
+    <string name="str_svideo3_source_title">SVIDEO3</string>
+    <string name="str_svideo4_source_title">SVIDEO4</string>
+    <string name="str_ypbpr_source_title">YPBPR</string>
+    <string name="str_ypbpr2_source_title">YPBPR2</string>
+    <string name="str_ypbpr3_source_title">YPBPR3</string>
+    <string name="str_scart_source_title">SCART</string>
+    <string name="str_scart2_source_title">SCART2</string>
+    <string name="str_dvi_source_title">DVI</string>
+    <string name="str_dvi2_source_title">DVI2</string>
+    <string name="str_dvi3_source_title">DVI3</string>
+    <string name="str_dvi4_source_title">DVI4</string>
+    
+    
+    <!-- for source info atv -->
+    <string name="str_atv_source_imageformat">Video Standard:\t</string>
+    <string name="str_atv_source_soundformat">Sound Mode:\t</string>
+    <string name="str_atv_source_audioformat">Audio Standard:\t</string>
+
+    <!-- for source info dtv -->
+    <string name="str_dtv_source_info_program_period">Program Period</string>
+    <string name="str_dtv_source_info_program_name">Program Name</string>
+    <string name="str_dtv_source_info_program_type">Program Type</string>
+    <string name="str_dtv_source_info_video_format">Video:\t</string>
+    <string name="str_dtv_source_info_audio_format">Audio:\t</string>
+    <string name="str_dtv_source_info_mheg5">MHEG5</string>
+    <string name="str_dtv_source_info_Subtitle">Subtitle</string>
+    <string name="str_dtv_source_info_language">Audio Language</string>
+    <string name="str_dtv_source_info_teletext">Teletext</string>
+    <string name="str_dtv_source_info_no_teletext">Sorry, No Teletext Available</string>
+    <string name="str_dtv_source_info_no_subtitle">Sorry, No Subtitle Available</string>
+    <string name="str_dtv_source_info_description">Description</string>
+    <string name="str_dtv_source_info_resolution">Resolution</string>
+    <string name="str_dtv_source_info_ginga">GINGA</string>
+    <string name="str_dtv_source_info_cc_tip">CC</string>
+
+    <!-- for time -->
+    <string name="str_time_confirm_tip">Please press red key to confirm config! </string>
+    <string name="str_time_time">Time</string>
+    <string name="str_time_date">Date</string>
+    <string name="str_time_currenttime">Current Time</string>
+    <string name="str_time_offtime">Off Time</string>
+    <string name="str_time_schedule">Scheduled Time</string>
+    <string name="str_time_sleep">Sleep Time</string>
+    <string name="str_time_autotime">Auto Adjust</string>
+    <string name="str_time_schedule_ontime">On Time</string>
+    <string name="str_time_set_time_on_title">Boot Time</string>
+    <string name="str_time_set_time_off_title">Unattended Time</string>
+    <string name="str_time_set_time_on">Setting Boot Time</string>
+    <string name="str_time_set_time_off">Setting Unattended Time</string>
+    <string name="str_time_schedule_hour">Hour</string>
+    <string name="str_time_schedule_minute">Minute</string>
+    <string name="str_time_schedule_source">Source</string>
+    <string name="str_time_schedule_channel">Channel</string>
+    <string name="str_time_schedule_volume">Volume</string>
+    <string name="str_time_hour">Hour</string>
+    <string name="str_time_minute">Minute</string>
+    <string name="str_time_second">Second</string>
+    <string name="str_time_change_timezone">Timezone automatic updated</string>
+
+    <string-array name="str_arr_time_switch">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_time_autotimetype">
+        <item>Off</item>
+        <item>DTV</item>
+        <item>Net</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="str_arr_time_source">
+        <item>Remember</item>
+        <item>Home Page</item>
+        <item>Media Player</item>
+        <item>DLNA</item>
+    </string-array>
+
+    <string-array name="str_arr_subtitle_switch">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_set_setting">Setting</string>
+    <string name="str_set_language">Language</string>
+
+    <string-array name="str_arr_set_menutimetype">
+        <item>5 Seconds</item>
+        <item>10 Seconds</item>
+        <item>15 Seconds</item>
+        <item>30 Seconds</item>
+        <item>Always</item>
+    </string-array>
+
+    <string name="str_set_menutime">Menu Time</string>
+    <string name="str_set_menutime_5sec">5 Seconds</string>
+
+    <string-array name="str_arr_set_switchmodetype">
+        <item>Black</item>
+        <item>Mirroring</item>
+    </string-array>
+
+    <string name="str_set_switchmode">Switch Mode</string>
+    <string name="str_set_switchmode_blackscreen">Black Screen</string>
+    <string name="str_set_off">Off</string>
+    <string name="str_set_on">On</string>
+
+    <string name="str_set_powersetting">Power Setting</string>
+    <string name="str_set_restoretodefault">Restore User Default</string>
+    <string name="str_set_hdmicec_label">HDMI_CEC</string>
+    <string name="str_set_hdmicec_devicelist">Device List</string>
+    <string name="str_set_hdmicec_off">Off</string>
+    <string name="str_set_hdmicec_onoff">HDMI CEC On/Off</string>
+    <string name="str_set_cc_setting">CC Setting</string>
+
+    <string-array name="str_arr_set_hdmicec_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_set_powersetting_onoff">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string name="str_updating_edid">Updating AMP information...</string>
+
+    <string name="str_set_hdmicec_autostandby">Auto Standby</string>
+    <string name="str_set_powersetting_powermusic">Power Music</string>
+    <string name="str_set_powersetting_powerlogo">Power Logo</string>
+    <string name="str_set_powersetting_powervolume">Power Volume</string>
+
+    <!-- for hot key -->
+    <string name="volume">Volume</string>
+    <string name="picture">Picture Mode</string>
+    <string name="sound">Sound Mode</string>
+    <string name="zoom">Zoom Mode</string>
+    <string name="str_root_alert_dialog_title">Tip</string>
+    <string name="str_stop_record_dialog_title">Stop Recording</string>
+    <string name="str_stop_timeshift_dialog_title">Stop TimeShift</string>
+    <string name="str_root_alert_dialog_message">Do you want to exit TV system?</string>
+    <string name="str_root_alert_dialog_confirm">OK</string>
+    <string name="str_root_alert_dialog_cancel">Cancel</string>
+    <string name="str_root_alert_dialog_message_restore_to_default">Are you sure to restore user default?</string>
+
+    <!-- for program edit -->
+    <string name="str_program_edit_dialog_ok">ok</string>
+    <string name="str_program_edit_dialog_cancel">cancel</string>
+    <string name="str_program_edit_dialog_input">please input</string>
+    <string name="str_no_sinal">No Signal</string>
+    <string name="str_channelList_favorite">Favorite List</string>
+    <string name="str_channelList_program">Channel List</string>
+
+    <string name="str_channelList_search">Find</string>
+    <string name="str_channelList_sort">Sort</string>
+    <string-array name="str_sort_type">
+        <item>Default</item>
+        <item>Satellite</item>
+        <item>Channel Name</item>
+        <item>Scrambled</item>
+        <item>LCN</item>
+        <item>Frequency</item>
+    </string-array>
+
+    <!-- For epg -->
+    <string-array name="str_arr_video_type">
+        <item></item>
+        <item>MPEG</item>
+        <item>H.264</item>
+        <item>AVS</item>
+        <item>VC1</item>
+        <item>HEVC</item>
+    </string-array>
+
+    <!-- For screen mode hint msg -->
+    <string name="str_invalid_service">INVALID SERVICE</string>
+    <string name="str_no_ci_module">NO CI MODULE</string>
+    <string name="str_ci_plus_authentication">CI+ AUTHENTICATION</string>
+    <string name="str_scrambled_program">SCRAMBLED PROGRAM</string>
+    <string name="str_program_block">PROGRAM BLOCK</string>
+    <string name="str_parental_block">PARENTAL BLOCK</string>
+    <string name="str_rating_blocked">RATING BLOCKED</string>
+    <string name="str_channel_block">CHANNEL BLOCK</string>
+    <string name="str_input_block">INPUT BLOCK</string>
+    <string name="str_audio_only">AUDIO ONLY</string>
+    <string name="str_data_only">DATA ONLY</string>
+    <string name="str_common_video">COMMON VIDEO</string>
+    <string name="str_unsupported">Unsupported</string>
+    <string name="str_no_channel_banner">NO CHANNEL</string>
+    <string name="str_invalid_pmt">INVALID PMT</string>
+    <string name="str_no_signal">NO SIGNAL</string>
+
+    <!-- For auto update scan -->
+    <string name="str_auto_update_scan">Auto update scan</string>
+
+    <!-- For channel control -->
+    <string name="str_channelcontrol_scan">SCANNING</string>
+    <string name="str_channelcontrol_channels">CHANNELS:</string>
+    <string name="str_channelcontrol_notfound">Channel not found</string>
+    <string name="str_channelcontrol_done">DONE</string>
+
+
+    <string name="update_loading">LOADING...</string>
+    <string name="installing">LOADING....</string>
+    <string name="update_complete_is_reboot">reboot the system ?</string>
+    <string name="update_failed">update failed</string>
+    <string name="str_disk_too_slow">Disk Speed is too low</string>
+    <string name="enter_old_pwd">Please enter old password</string>
+    <string name="enter_check_pwd">Please enter password</string>
+    <string name="enter_new_pwd">Please enter new password</string>
+    <string name="confirm_new_pwd">Please confirm new password</string>
+    <string name="block_program_title">Block Program</string>
+
+    <!-- for box only -->
+    <string name="wait_for_tuning_hint">Please wait for tunning...</string>
+
+    <string name="str_vchip_usa_parental_control">USA Parental Control</string>
+    <string name="str_vchip_rrt5_setting">RRT5 Setting</string>
+    <string name="str_vchip_reset_rrt5l">Reset RRT5</string>
+    <string name="str_vchip_change_password">Change Password</string>
+    <string name="str_vchip_check_password">Check Password</string>
+    <string name="str_vchip_enter_check_pwd">Please enter password</string>
+    <string name="str_vchip_enter_old_pwd">old password</string>
+    <string name="str_vchip_enter_new_pwd">new password</string>
+    <string name="str_vchip_confirm_new_pwd">confirm password</string>
+    <string name="changepassword_title">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="oldpasswordtip">Enter old password.</string>
+    <string name="newpasswordtip">Enter new password.</string>
+    <string name="confirmpasswordtip">Enter confirm password.</string>
+    <string name="sure">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="clean">Clean</string>
+    <string name="passwordsettip">Please enter the password.</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="enterpassword_system_lock">Lock System</string>
+    <string name="enterpassword_channel_lock">Channel Block</string>
+    <string name="enterpassword_rating_lock">Rating Block</string>
+    <string name="password">password:</string>
+    <string name="password_tip_old">Please enter the old password.</string>
+    <string name="password_tip_new">Please enter the new password.</string>
+    <string name="password_tip_condirm">Please confirm the new password.</string>
+    <string name="errortip">The password is incorrect.Please enter the password again.</string>
+
+    <string name="audio_type_mpeg">MPEG</string>
+    <string name="audio_type_dolby_d">Dolby D</string>
+    <string name="audio_type_aac">AAC</string>
+    <string name="audio_type_ac3p">AC3P</string>
+    <string name="audio_type_dra1">DRA1</string>
+
+    <!-- for hdr -->
+    <string name="str_set_hdr">HDR</string>
+    <string-array name="setting_str_hdr">
+        <item>Off</item>
+        <item>Low</item>
+        <item>Middle</item>
+        <item>High</item>
+    </string-array>
+    
+    <!-- For HDMI EDID Version -->
+    <string name="str_hdmi_edid_version">HDMI EDID Version</string>
+    <string name="str_hdmi_edid_version_change">Changing HDMI EDID version</string>
+    <string name="str_hdmi_edid_version_wait">Please wait a moment...</string>
+
+    <string-array name="str_arr_hdmi_edid_version">
+        <item>EDID 1.4</item>
+        <item>EDID 2.0</item>
+    </string-array>
+    <string name="str_edid_auto_switch">Auto</string>
+
+    <string name="str_tv_unknown">Unknown</string>
+
+    <string name="str_preferred_channel_list">Preferred Channel List</string>
+    
+     <!-- for Audio Info AAC Profile And Level -->
+    <string name="aac_level1">AAC L1</string>
+    <string name="aac_level2">AAC L2</string>
+    <string name="aac_level4">AAC L4</string>
+    <string name="aac_level5">AAC L5</string>
+    <string name="he_aac_level2">HE-AAC L2</string>
+    <string name="he_aac_level3">HE-AAC L3</string>
+    <string name="he_aac_level4">HE-AAC L4</string>
+    <string name="he_aac_level5">HE-AAC L5</string>
+    
+    <string name="str_input_source_lock_title">Input Source Lock</string>
+    <string name="str_input_source_lock_prompt">Lock/Unlock</string>
+    <string name="str_input_source_reset_prompt">Reset All</string>
+    
+    <string name="old_password_not_filled_completely">The old password does not filled completely. Please enter again.</string>
+    <string name="new_password_not_filled_completely">The new password does not filled completely. Please enter again.</string>
+    <string name="originalpassworderr">The original password is incorrect. Please enter again.</string>
+    <string name="newconfirmpassworderr">The new password and password to confirm do not match.Please enter again.</string>
+    <string name="resetsuccess">Password reset successfully.</string>
+    
+    <string name="str_info_chaneel_name">channel name</string>
+    
+    <string-array name="power_setting_power_logo">
+        <item>Off</item>
+        <item>Default</item>
+        <item>Cap1</item>
+        <item>Cap2</item>
+    </string-array>
+    
+    <string-array name="setting_str_autobacklight">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_dtv_current_program">Program:</string>
+    <string name="str_dtv_no_epg">No Epg Information</string>
+    
+    
+</resources>

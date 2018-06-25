@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/color_menu_bg">
+    
+    <Button 
+        android:id="@+id/start_hotel_menu"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="酒店菜单"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:onClick="onClick"
+        />
+    
+    <Button 
+        android:id="@+id/start_hotel_hotspot"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="热点设置"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>

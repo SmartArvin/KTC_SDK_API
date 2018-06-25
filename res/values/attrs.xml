@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- CircleMenuItemView -->
+    <declare-styleable name="circleItemView"> 
+        <attr name="flag_text" format="string"/>
+        <attr name="flag_focused" format="boolean"/>
+    </declare-styleable>
+    
+</resources>

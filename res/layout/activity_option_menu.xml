@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_menu_root"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/option_first_ly" 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/option_first_bg"
+        >
+        <TextView 
+            android:id="@+id/option_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_menu_title"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:focusable="false"
+            />
+        
+        <LinearLayout
+            android:id="@+id/option_first_content_ly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/option_title"
+	        android:layout_marginTop="10dp"
+	        android:padding="30dp"
+	        android:orientation="vertical"
+	        >
+	        <Button 
+	            android:id="@+id/option_pic_mode"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:paddingStart="20dp"
+	            android:paddingRight="20dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/menu_picutre"
+	            android:textSize="25sp"
+	            android:textColor="#FFFFFF"
+	            android:nextFocusUp="@+id/option_pic_mode"
+	            android:nextFocusRight="@+id/option_pic_mode"
+	            android:background="@drawable/selector_second_menu_item"
+	            />
+	        <Button 
+	            android:id="@+id/option_sound_mode"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:paddingStart="20dp"
+	            android:paddingRight="20dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/menu_sound"
+	            android:textSize="25sp"
+	            android:textColor="#FFFFFF"
+	            android:nextFocusRight="@+id/option_sound_mode"
+	            android:background="@drawable/selector_second_menu_item"
+	            />
+	        <Button 
+	            android:id="@+id/option_hdr_mode"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:paddingStart="20dp"
+	            android:paddingRight="20dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/menu_option_hdr"
+	            android:textSize="25sp"
+	            android:textColor="#FFFFFF"
+	            android:nextFocusDown="@+id/option_pic_mode"
+	            android:nextFocusRight="@+id/option_hdr_mode"
+	            android:background="@drawable/selector_second_menu_item"
+	            />
+	    </LinearLayout>
+	    <View 
+	        android:id="@+id/option_line"
+	        android:layout_width="2dp"
+	        android:layout_height="match_parent"
+	        android:layout_toEndOf="@+id/option_first_content_ly"
+	        android:background="#32FFFFFF"
+	        android:visibility="invisible"
+	        />
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/option_second_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/option_first_ly"
+        android:orientation="horizontal">
+        
+        <!-- picture ly -->
+        <LinearLayout 
+            android:id="@+id/option_picture_ly"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="20dp"
+	        android:paddingEnd="100dp"
+	        android:background="@drawable/option_second_bg"
+	        android:visibility="gone">
+
+            <!-- For Picture Mode -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_picturemode"
+                style="@style/pic_mode_sty_combo_btn">
+                <TextView android:text="@string/str_pic_picturemode" style="@style/pic_mode_sty_combo_name"/>
+                <ImageView style="@style/pic_mode_sty_leftarrow" android:visibility="visible"></ImageView>
+                <TextView style="@style/pic_mode_sty_combo_indicator"/>
+                <ImageView style="@style/pic_mode_sty_rightarrow" android:visibility="visible"></ImageView>
+            </LinearLayout>
+            
+            <!-- For Contrast -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_contrast"
+                style="@style/pic_mode_sty_seekbar_btn">
+                <TextView android:text="@string/str_pic_contrast" style="@style/pic_mode_sty_seekbar_name" />
+                <SeekBar style="@style/pic_mode_sty_bar" />
+                <TextView style="@style/pic_mode_sty_seekbar_indicator"/>
+            </LinearLayout>
+            
+            <!-- For Brightness -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_brightness"
+                style="@style/pic_mode_sty_seekbar_btn">
+                <TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_brightness"/>
+                <SeekBar style="@style/pic_mode_sty_bar" />
+                <TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <!-- For Hue -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_hue"
+                style="@style/pic_mode_sty_seekbar_btn">
+                <TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_hue"/>
+                <SeekBar style="@style/pic_mode_sty_bar" />
+                <TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <!-- For Sharpness -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_sharpness"
+                style="@style/pic_mode_sty_seekbar_btn">
+                <TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_sharpness"/>
+                <SeekBar style="@style/pic_mode_sty_bar" />
+                <TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <!-- For Saturation -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_saturation"
+                style="@style/pic_mode_sty_seekbar_btn">
+                <TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_saturation"/>
+                <SeekBar style="@style/pic_mode_sty_bar" />
+                <TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+            </LinearLayout>
+            
+            <!-- Color Temperature -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_colortemperature"
+                style="@style/pic_mode_sty_combo_btn">
+                <TextView android:text="@string/str_pic_colortemperature" style="@style/pic_mode_sty_combo_name"/>
+                <ImageView style="@style/pic_mode_sty_leftarrow"></ImageView>
+                <TextView style="@style/pic_mode_sty_combo_indicator"/>
+                <ImageView style="@style/pic_mode_sty_rightarrow"></ImageView>
+            </LinearLayout>
+            
+            <!-- Zoom Mode -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_pic_zoommode"
+                style="@style/pic_mode_sty_combo_btn">
+                <TextView android:text="@string/str_pic_zoommode" style="@style/pic_mode_sty_combo_name"/>
+                <ImageView style="@style/pic_mode_sty_leftarrow"></ImageView>
+                <TextView  style="@style/pic_mode_sty_combo_indicator"/>
+                <ImageView style="@style/pic_mode_sty_rightarrow"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- sound mode -->
+        <LinearLayout 
+            android:id="@+id/option_sound_ly"
+            android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="20dp"
+	        android:paddingRight="50dp"
+	        android:background="@drawable/option_second_bg"
+	        android:visibility="gone">
+            
+            <!-- For Sound Mode -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_sound_soundmode"
+                style="@style/sound_sty_combo_btn">
+                <TextView
+                    style="@style/sound_sty_combo_name"
+                    android:text="@string/str_sound_soundmode" />
+                <ImageView style="@style/sound_sty_leftarrow"></ImageView>
+                <TextView style="@style/sound_sty_combo_indicator" />
+                <ImageView style="@style/sound_sty_rightarrow"></ImageView>
+            </LinearLayout>
+            
+            <!-- For 120hz -->
+		    <LinearLayout
+		        android:id="@+id/linearlayout_option_sound_equalizer120hz"
+		        style="@style/sound_sty_seekbar_btn">
+		        <TextView
+		            style="@style/sound_sty_seekbar_name"
+		            android:text="@string/str_sound_equalizer120hz"/>
+		        <SeekBar style="@style/sound_sty_bar"/>
+		        <TextView
+		            style="@style/sound_sty_seekbar_indicator"/>
+		    </LinearLayout>
+		    
+		    <!-- For 500hz -->
+		    <LinearLayout
+		        android:id="@+id/linearlayout_option_sound_equalizer500hz"
+		        style="@style/sound_sty_seekbar_btn">
+		        <TextView
+		            style="@style/sound_sty_seekbar_name"
+		            android:text="@string/str_sound_equalizer500hz"/>
+		        <SeekBar
+		            style="@style/sound_sty_bar"/>
+		        <TextView
+		            style="@style/sound_sty_seekbar_indicator"/>
+		    </LinearLayout>
+		    
+		    <!-- For 1.5khz -->
+		    <LinearLayout
+		        android:id="@+id/linearlayout_option_sound_equalizer1_5khz"
+		        style="@style/sound_sty_seekbar_btn">
+		        <TextView
+		            style="@style/sound_sty_seekbar_name"
+		            android:text="@string/str_sound_equalizer1.5khz"/>
+		        <SeekBar style="@style/sound_sty_bar"/>
+		        <TextView
+		            style="@style/sound_sty_seekbar_indicator"/>
+		    </LinearLayout>
+		    
+		    <!-- For 5khz -->
+		    <LinearLayout
+		        android:id="@+id/linearlayout_option_sound_equalizer5khz"
+		        style="@style/sound_sty_seekbar_btn">
+		        <TextView
+		            style="@style/sound_sty_seekbar_name"
+		            android:text="@string/str_sound_equalizer5khz"/>
+		        <SeekBar
+		            style="@style/sound_sty_bar" />
+		        <TextView
+		            style="@style/sound_sty_seekbar_indicator"/>
+		    </LinearLayout>
+		    
+		    <!-- For 10khz -->
+		    <LinearLayout
+		        android:id="@+id/linearlayout_option_sound_equalizer10khz"
+		        style="@style/sound_sty_seekbar_btn">
+		        <TextView
+		            style="@style/sound_sty_seekbar_name"
+		            android:text="@string/str_sound_equalizer10khz"/>
+		        <SeekBar
+		            style="@style/sound_sty_bar" />
+		        <TextView
+		            style="@style/sound_sty_seekbar_indicator"/>
+		    </LinearLayout>
+
+            <!-- For Balance -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_sound_balance"
+                style="@style/sound_sty_seekbar_btn">
+                <TextView
+                    style="@style/sound_sty_seekbar_name"
+                    android:text="@string/str_sound_balance" />
+                <SeekBar style="@style/sound_sty_bar" />
+                <TextView style="@style/sound_sty_seekbar_indicator" />
+            </LinearLayout>
+
+            <!-- For Surround -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_sound_surround"
+                style="@style/sound_sty_combo_btn">
+                <TextView
+                    style="@style/sound_sty_combo_name"
+                    android:text="@string/str_sound_surround" />
+                <ImageView style="@style/sound_sty_leftarrow"></ImageView>
+                <TextView style="@style/sound_sty_combo_indicator" />
+                <ImageView style="@style/sound_sty_rightarrow"></ImageView>
+            </LinearLayout>
+
+            <!-- For SPDIF OUTPUT -->
+            <LinearLayout
+                android:id="@+id/linearlayout_option_sound_spdifoutput"
+                style="@style/sound_sty_combo_btn">
+                <TextView
+                    style="@style/sound_sty_combo_name"
+                    android:text="@string/str_sound_spdifoutput" />
+                 <ImageView style="@style/sound_sty_leftarrow"></ImageView>
+                <TextView style="@style/sound_sty_combo_indicator" />
+                <ImageView style="@style/sound_sty_rightarrow"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+        <!-- sound mode -->
+        <LinearLayout 
+            android:id="@+id/option_hdr_ly"
+            android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="20dp"
+	        android:paddingRight="50dp"
+	        android:background="@drawable/option_second_bg"
+	        android:visibility="gone">
+            
+            <ListView
+               android:id="@+id/hdr_listview"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:scrollbars="none"
+               android:dividerHeight="0dp"
+               android:divider="@android:color/transparent"
+               android:listSelector="@drawable/selector_second_menu_item"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

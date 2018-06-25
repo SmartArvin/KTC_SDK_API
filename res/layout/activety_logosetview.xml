@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/color_menu_bg"
+    android:orientation="vertical" >
+
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_logosetview"
+                style="@style/hotel_menu_sty_button_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_button_name"
+                    android:text="@string/str_logo_set_value" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_logocheange"
+                style="@style/hotel_menu_sty_button_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_button_name"
+                    android:text="@string/str_logo_restore" />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_logosetchacel"
+                style="@style/hotel_menu_sty_button_btn" >
+
+                <TextView
+                    style="@style/hotel_menu_sty_button_name"
+                    android:text="@string/str_logo_cancel" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>
