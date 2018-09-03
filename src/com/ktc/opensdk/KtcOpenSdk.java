@@ -1,8 +1,9 @@
 package com.ktc.opensdk;
 
-import com.customer.opensdk.CustomerSpecialUtil;
-
 import android.content.Context;
+
+import com.customer.opensdk.CustomerSpecialUtil;
+import com.ktc.networksdk.KtcNetworkUtil;
 
 /**
 *TODO KTC第三方开放sdk

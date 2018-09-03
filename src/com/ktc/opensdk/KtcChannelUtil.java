@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -48,10 +49,14 @@ public class KtcChannelUtil {
 	 * @return KtcChannelUtil
 	 */
 	public static KtcChannelUtil getInstance(Context context) {
-		mContext = context;
-    	if (mKtcChannelUtil == null) {
-    		mKtcChannelUtil = new KtcChannelUtil();
-    	}
+		try {
+			mContext = context;
+	    	if (mKtcChannelUtil == null) {
+	    		mKtcChannelUtil = new KtcChannelUtil();
+	    	}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     	return mKtcChannelUtil;
     }
 	
@@ -62,9 +67,14 @@ public class KtcChannelUtil {
 	 * @return KtcShellUtil
 	 */
 	private static KtcShellUtil getKtcShellUtil() {
-    	if (mKtcShellUtil == null) {
-    		mKtcShellUtil = new KtcShellUtil();
-    	}
+		try {
+			if (mKtcShellUtil == null) {
+	    		mKtcShellUtil = new KtcShellUtil();
+	    	}	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	
     	return mKtcShellUtil;
     }
 	
@@ -74,9 +84,13 @@ public class KtcChannelUtil {
 	 * @return KtcSystemUtil
 	 */
 	private static KtcSystemUtil getKtcSystemUtil() {
-    	if (mKtcSystemUtil == null) {
-    		mKtcSystemUtil = new KtcSystemUtil();
-    	}
+		try {
+			if (mKtcSystemUtil == null) {
+	    		mKtcSystemUtil = new KtcSystemUtil();
+	    	}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     	return mKtcSystemUtil;
     }
 	
@@ -86,9 +100,14 @@ public class KtcChannelUtil {
 	 * @return KtcLogerUtil
 	 */
 	private static KtcLogerUtil getKtcLogerUtil() {
-    	if (mKtcLogerUtil == null) {
-    		mKtcLogerUtil = new KtcLogerUtil();
-    	}
+		try {
+			if (mKtcLogerUtil == null) {
+	    		mKtcLogerUtil = new KtcLogerUtil();
+	    	}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	
     	return mKtcLogerUtil;
     }
 	
@@ -98,7 +117,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToAtv(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_ATV);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_ATV);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -107,7 +130,12 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToDtv(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_DTV);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_DTV);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 	/**
@@ -116,7 +144,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToAv(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_CVBS);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_CVBS);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -125,7 +157,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToYpbpr(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_YPBPR);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_YPBPR);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -134,7 +170,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToHdmi1(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -143,7 +183,12 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToHdmi2(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI2);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI2);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 	/**
@@ -152,7 +197,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToHdmi3(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI3);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_HDMI3);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -161,7 +210,11 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToVga(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_VGA);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_VGA);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -170,7 +223,12 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSourceToStorage(){
-		changeTvSource(TvCommonManager.INPUT_SOURCE_STORAGE);
+		try {
+			changeTvSource(TvCommonManager.INPUT_SOURCE_STORAGE);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 	/**
@@ -179,13 +237,17 @@ public class KtcChannelUtil {
 	 * @return ProgramInfo
 	 */
 	public ProgramInfo getProgramByNumber(int proNum , ArrayList<ProgramInfo> proLists) {
-		if(proLists != null && proLists.size() > 0){
-			for(ProgramInfo mProgramInfo : proLists){
-				if(mProgramInfo.number == proNum){
-					getKtcLogerUtil().I(TAG, "getProgramByNumber:  "+mProgramInfo.number);
-					return mProgramInfo ;
+		try {
+			if(proLists != null && proLists.size() > 0){
+				for(ProgramInfo mProgramInfo : proLists){
+					if(mProgramInfo.number == proNum){
+						getKtcLogerUtil().I(TAG, "getProgramByNumber:  "+mProgramInfo.number);
+						return mProgramInfo ;
+					}
 				}
-			}
+			}	
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return null ;
 	}
@@ -214,50 +276,54 @@ public class KtcChannelUtil {
 	 * @return ArrayList<ProgramInfo>
 	 */
 	public ArrayList<ProgramInfo> getProgramListByType(int sourceType){
-	    int mServiceNum = 0;
-		ProgramInfo pgi = null;
-		ArrayList<ProgramInfo> mProInfoList_DTV = new ArrayList<ProgramInfo>();
-		ArrayList<ProgramInfo> mProInfoList_ATV = new ArrayList<ProgramInfo>();
-		
-		
-		mServiceNum = TvChannelManager.getInstance().getProgramCount(TvChannelManager.PROGRAM_COUNT_ATV_DTV);
-		for (int k = 0; k < mServiceNum; k++) {
-            pgi = TvChannelManager.getInstance().getProgramInfoByIndex(k);
-            if (pgi != null) {
-                // Show All Programs
-                if ((pgi.isDelete == true) || (pgi.isVisible == false)) {
-                    continue;
-                } else {
-                	ProgramInfoObject pfo = new ProgramInfoObject();
-                    if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
-                        pfo.setChannelId(String.valueOf(getATVDisplayChNum(pgi.number)));
-                    } else if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_DTV){
-                        pfo.setChannelId(String.valueOf(pgi.number));
-                    }
-                    
-                    pfo.setChannelName(pgi.serviceName);
-                    pfo.setServiceType(pgi.serviceType);
-                    pfo.setSkipImg(pgi.isSkip);
-                    pfo.setSslImg(pgi.isScramble);
-                    pfo.setFrequenry(pgi.frequency);
-                    
-                    if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
-                    	getKtcLogerUtil().I(TAG, "getProgramListByType——ATV:  "+pgi.serviceName);
-                    	mProInfoList_ATV.add(pgi);
-                    } else if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_DTV){
-                    	getKtcLogerUtil().I(TAG, "getProgramListByType——DTV:  "+pgi.serviceName);
-                    	mProInfoList_DTV.add(pgi);
-                    }
-                }
-            }
-        }
-		
-		if (sourceType == TvCommonManager.INPUT_SOURCE_ATV) {
-			return mProInfoList_ATV;
-		} else if(sourceType == TvCommonManager.INPUT_SOURCE_DTV){
-			return mProInfoList_DTV;
-		}
-		
+		try {
+			   int mServiceNum = 0;
+				ProgramInfo pgi = null;
+				ArrayList<ProgramInfo> mProInfoList_DTV = new ArrayList<ProgramInfo>();
+				ArrayList<ProgramInfo> mProInfoList_ATV = new ArrayList<ProgramInfo>();
+				
+				mServiceNum = TvChannelManager.getInstance().getProgramCount(TvChannelManager.PROGRAM_COUNT_ATV_DTV);
+				for (int k = 0; k < mServiceNum; k++) {
+		            pgi = TvChannelManager.getInstance().getProgramInfoByIndex(k);
+		            if (pgi != null) {
+		                // Show All Programs
+		                if ((pgi.isDelete == true) || (pgi.isVisible == false)) {
+		                    continue;
+		                } else {
+		                	ProgramInfoObject pfo = new ProgramInfoObject();
+		                    if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
+		                        pfo.setChannelId(String.valueOf(getATVDisplayChNum(pgi.number)));
+		                    } else if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_DTV){
+		                        pfo.setChannelId(String.valueOf(pgi.number));
+		                    }
+		                    
+		                    pfo.setChannelName(pgi.serviceName);
+		                    pfo.setServiceType(pgi.serviceType);
+		                    pfo.setSkipImg(pgi.isSkip);
+		                    pfo.setSslImg(pgi.isScramble);
+		                    pfo.setFrequenry(pgi.frequency);
+		                    
+		                    if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
+		                    	getKtcLogerUtil().I(TAG, "getProgramListByType——ATV:  "+pgi.serviceName);
+		                    	mProInfoList_ATV.add(pgi);
+		                    } else if (pgi.serviceType == TvChannelManager.SERVICE_TYPE_DTV){
+		                    	getKtcLogerUtil().I(TAG, "getProgramListByType——DTV:  "+pgi.serviceName);
+		                    	mProInfoList_DTV.add(pgi);
+		                    }
+		                }
+		            }
+		        }
+				
+				if (sourceType == TvCommonManager.INPUT_SOURCE_ATV) {
+					return mProInfoList_ATV;
+				} else if(sourceType == TvCommonManager.INPUT_SOURCE_DTV){
+					return mProInfoList_DTV;
+				}
+				
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+	 
 		return null ;
 	}
 	
@@ -334,28 +400,32 @@ public class KtcChannelUtil {
 	 * @return boolean
 	 */
 	public boolean cloneProgramsTvToUSB() {
-		int i = 0;
-		String usbPath = getKtcSystemUtil().getFirstUsbPath();
-		
-		File USBFile_DTMB[] = new File[2];
-		File TVFile_DTMB[] = new File[2];
-		
-		USBFile_DTMB[0] = new File(usbPath+"atv_cmdb.bin");
-		USBFile_DTMB[1] = new File(usbPath+"dtv_cmdb_0.bin");
-		
-		TVFile_DTMB[0] = new File("/tvdatabase/Database/atv_cmdb.bin");
-		TVFile_DTMB[1] = new File("/tvdatabase/Database/dtv_cmdb_0.bin");
+		try {
+			int i = 0;
+			String usbPath = getKtcSystemUtil().getFirstUsbPath();
+			
+			File USBFile_DTMB[] = new File[2];
+			File TVFile_DTMB[] = new File[2];
+			
+			USBFile_DTMB[0] = new File(usbPath+"atv_cmdb.bin");
+			USBFile_DTMB[1] = new File(usbPath+"dtv_cmdb_0.bin");
+			
+			TVFile_DTMB[0] = new File("/tvdatabase/Database/atv_cmdb.bin");
+			TVFile_DTMB[1] = new File("/tvdatabase/Database/dtv_cmdb_0.bin");
 
-		for (i = 0; i < 2; i++) {
-			getKtcShellUtil().cp(TVFile_DTMB[i].getAbsolutePath() , USBFile_DTMB[i].getAbsolutePath());
-			getKtcShellUtil().sync();
-		}
-
-		for (i = 0; i < 2; i++) {
-			if (!USBFile_DTMB[i].exists()) {
-				getKtcLogerUtil().I(TAG, "cloneProgramsTvToUSB:  file clone fail!!!");
-				return false;
+			for (i = 0; i < 2; i++) {
+				getKtcShellUtil().cp(TVFile_DTMB[i].getAbsolutePath() , USBFile_DTMB[i].getAbsolutePath());
+				getKtcShellUtil().sync();
 			}
+
+			for (i = 0; i < 2; i++) {
+				if (!USBFile_DTMB[i].exists()) {
+					getKtcLogerUtil().I(TAG, "cloneProgramsTvToUSB:  file clone fail!!!");
+					return false;
+				}
+			}	 
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return true;
 	}
@@ -366,42 +436,46 @@ public class KtcChannelUtil {
 	 * @return boolean
 	 */
 	public boolean cloneProgramsUSBToTv() {
-		int i = 0;
-		String usbPath = getKtcSystemUtil().getFirstUsbPath();
-		
-		File USBFile_DTMB[] = new File[2];
-		File TVFile_DTMB[] = new File[2];
-		
-		USBFile_DTMB[0] = new File(usbPath+"atv_cmdb.bin");
-		USBFile_DTMB[1] = new File(usbPath+"dtv_cmdb_0.bin");
-		
-		TVFile_DTMB[0] = new File("/tvdatabase/Database/atv_cmdb.bin");
-		TVFile_DTMB[1] = new File("/tvdatabase/Database/dtv_cmdb_0.bin");
+		try {
+			int i = 0;
+			String usbPath = getKtcSystemUtil().getFirstUsbPath();
+			
+			File USBFile_DTMB[] = new File[2];
+			File TVFile_DTMB[] = new File[2];
+			
+			USBFile_DTMB[0] = new File(usbPath+"atv_cmdb.bin");
+			USBFile_DTMB[1] = new File(usbPath+"dtv_cmdb_0.bin");
+			
+			TVFile_DTMB[0] = new File("/tvdatabase/Database/atv_cmdb.bin");
+			TVFile_DTMB[1] = new File("/tvdatabase/Database/dtv_cmdb_0.bin");
 
 
-		for (i = 0; i < 2; i++) {
-			if (!USBFile_DTMB[i].exists()) {
-				getKtcLogerUtil().I(TAG, "cloneProgramsUSBToTv:  file not exit!!!");
+			for (i = 0; i < 2; i++) {
+				if (!USBFile_DTMB[i].exists()) {
+					getKtcLogerUtil().I(TAG, "cloneProgramsUSBToTv:  file not exit!!!");
+					return false;
+				}
+			}
+			try {
+				for (i = 0; i < 2; i++) {
+					FileInputStream fis = new FileInputStream(USBFile_DTMB[i]);
+					FileOutputStream fos = new FileOutputStream(TVFile_DTMB[i]);
+					byte[] bt = new byte[fis.available()];
+					fis.read(bt);
+					fos.write(bt);
+					fos.close();
+					fis.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+				getKtcLogerUtil().I(TAG, "cloneProgramsUSBToTv:  file clone fail!!!");
 				return false;
 			}
-		}
-		try {
-			for (i = 0; i < 2; i++) {
-				FileInputStream fis = new FileInputStream(USBFile_DTMB[i]);
-				FileOutputStream fos = new FileOutputStream(TVFile_DTMB[i]);
-				byte[] bt = new byte[fis.available()];
-				fis.read(bt);
-				fos.write(bt);
-				fos.close();
-				fis.close();
-			}
-		} catch (IOException e) {
+			TvCommonManager.getInstance().rebootSystem("reboot");
+		} catch (Exception e) {
 			e.printStackTrace();
-			getKtcLogerUtil().I(TAG, "cloneProgramsUSBToTv:  file clone fail!!!");
-			return false;
 		}
-		TvCommonManager.getInstance().rebootSystem("reboot");
-	
+		
 		return true;
 	}
 	
@@ -411,13 +485,18 @@ public class KtcChannelUtil {
 	 * @return boolean
 	 */
 	public boolean selectProgramForAtv(int proNum){
-		if(TvCommonManager.getInstance().getCurrentTvInputSource() != TvCommonManager.INPUT_SOURCE_ATV){
-			TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
-			return selectProgram(proNum);
-		}else{
-			getKtcLogerUtil().I(TAG, "selectProgram:  Program Type Illegal!");
-			return false;
+		try {
+			if(TvCommonManager.getInstance().getCurrentTvInputSource() != TvCommonManager.INPUT_SOURCE_ATV){
+				TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
+				return selectProgram(proNum);
+			}else{
+				getKtcLogerUtil().I(TAG, "selectProgram:  Program Type Illegal!");
+				return false;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		return false;
 	}
 	
 	/**
@@ -426,110 +505,126 @@ public class KtcChannelUtil {
 	 * @return boolean
 	 */
 	public boolean selectProgramForDtv(int proNum){
-		if(TvCommonManager.getInstance().getCurrentTvInputSource() != TvCommonManager.INPUT_SOURCE_DTV){
-			TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_DTV);
-			return selectProgram(proNum);
-		}else{
-			getKtcLogerUtil().I(TAG, "selectProgram:  Program Type Illegal!");
-			return false;
+		try {
+			if(TvCommonManager.getInstance().getCurrentTvInputSource() != TvCommonManager.INPUT_SOURCE_DTV){
+				TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_DTV);
+				return selectProgram(proNum);
+			}else{
+				getKtcLogerUtil().I(TAG, "selectProgram:  Program Type Illegal!");
+				return false;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		return false;
 	}
 	
 	private boolean selectProgram(int proNum) {
-		
-		TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
-		TvChannelManager mTvChannelManager = TvChannelManager.getInstance();
-		
-		boolean isSuccess = false;
-		int mProgramType = getProgramType(proNum);
-		int mInputSource = mTvCommonManager.getCurrentTvInputSource();
-		
-		if (mProgramType >= 0) {
-			if (mInputSource == TvCommonManager.INPUT_SOURCE_ATV) {
-				isSuccess = mTvChannelManager.selectProgram((proNum - 1) , TvChannelManager.SERVICE_TYPE_ATV);
-			} else if (mInputSource == TvCommonManager.INPUT_SOURCE_DTV) {
-				switch (mProgramType) {
-				case TvChannelManager.SERVICE_TYPE_DTV:
-					isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_DTV);
-					break;
-				case TvChannelManager.SERVICE_TYPE_RADIO:
-					isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_RADIO);
-					break;
-				case TvChannelManager.SERVICE_TYPE_DATA:
-					isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_DATA);
-					break;
+		try {
+			TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
+			TvChannelManager mTvChannelManager = TvChannelManager.getInstance();
+			
+			boolean isSuccess = false;
+			int mProgramType = getProgramType(proNum);
+			int mInputSource = mTvCommonManager.getCurrentTvInputSource();
+			
+			if (mProgramType >= 0) {
+				if (mInputSource == TvCommonManager.INPUT_SOURCE_ATV) {
+					isSuccess = mTvChannelManager.selectProgram((proNum - 1) , TvChannelManager.SERVICE_TYPE_ATV);
+				} else if (mInputSource == TvCommonManager.INPUT_SOURCE_DTV) {
+					switch (mProgramType) {
+					case TvChannelManager.SERVICE_TYPE_DTV:
+						isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_DTV);
+						break;
+					case TvChannelManager.SERVICE_TYPE_RADIO:
+						isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_RADIO);
+						break;
+					case TvChannelManager.SERVICE_TYPE_DATA:
+						isSuccess = mTvChannelManager.selectProgram(proNum , TvChannelManager.SERVICE_TYPE_DATA);
+						break;
+					}
 				}
 			}
+			getKtcLogerUtil().I(TAG, "selectProgram:  "+isSuccess);
+			return isSuccess;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		getKtcLogerUtil().I(TAG, "selectProgram:  "+isSuccess);
-		return isSuccess;
+		return false;
 	}
 	
 	private int getProgramType(int proNum) {
-		
-		TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
-		
-		int mProgramType = -1;
-		ArrayList<ProgramInfo> mProgramList = getAllProgramList();
-		int curInputSrc = mTvCommonManager.getCurrentTvInputSource();
-		
-		if (TvCommonManager.INPUT_SOURCE_ATV == curInputSrc) {
-			for (ProgramInfo mAtvPro : mProgramList) {
-				if ((proNum - 1) == mAtvPro.number && mAtvPro.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
-					mProgramType = TvChannelManager.SERVICE_TYPE_ATV;
-					break;
-				}
-			}
-		} else if (TvCommonManager.INPUT_SOURCE_DTV == curInputSrc) {
-			for (ProgramInfo mDtvPro : mProgramList) {
-				if (proNum == mDtvPro.number) {
-					mProgramType = TvChannelManager.SERVICE_TYPE_DTV;
-					break;
-				}
-			}
+		try {
+			TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
 			
-			for (ProgramInfo mRadioPro : mProgramList) {
-				if (proNum == mRadioPro.number) {
-					if (mRadioPro.serviceType == TvChannelManager.SERVICE_TYPE_RADIO) {
-						mProgramType = TvChannelManager.SERVICE_TYPE_RADIO;
+			int mProgramType = -1;
+			ArrayList<ProgramInfo> mProgramList = getAllProgramList();
+			int curInputSrc = mTvCommonManager.getCurrentTvInputSource();
+			
+			if (TvCommonManager.INPUT_SOURCE_ATV == curInputSrc) {
+				for (ProgramInfo mAtvPro : mProgramList) {
+					if ((proNum - 1) == mAtvPro.number && mAtvPro.serviceType == TvChannelManager.SERVICE_TYPE_ATV) {
+						mProgramType = TvChannelManager.SERVICE_TYPE_ATV;
 						break;
 					}
 				}
-			}
+			} else if (TvCommonManager.INPUT_SOURCE_DTV == curInputSrc) {
+				for (ProgramInfo mDtvPro : mProgramList) {
+					if (proNum == mDtvPro.number) {
+						mProgramType = TvChannelManager.SERVICE_TYPE_DTV;
+						break;
+					}
+				}
+				
+				for (ProgramInfo mRadioPro : mProgramList) {
+					if (proNum == mRadioPro.number) {
+						if (mRadioPro.serviceType == TvChannelManager.SERVICE_TYPE_RADIO) {
+							mProgramType = TvChannelManager.SERVICE_TYPE_RADIO;
+							break;
+						}
+					}
+				}
 
-			for (ProgramInfo mDataPro : mProgramList) {
-				if (proNum == mDataPro.number) {
-					if (mDataPro.serviceType == TvChannelManager.SERVICE_TYPE_DATA) {
-						mProgramType = TvChannelManager.SERVICE_TYPE_DATA;
-						break;
+				for (ProgramInfo mDataPro : mProgramList) {
+					if (proNum == mDataPro.number) {
+						if (mDataPro.serviceType == TvChannelManager.SERVICE_TYPE_DATA) {
+							mProgramType = TvChannelManager.SERVICE_TYPE_DATA;
+							break;
+						}
 					}
 				}
 			}
+			getKtcLogerUtil().I(TAG, "getProgramType:  "+mProgramType);
+			return mProgramType;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		getKtcLogerUtil().I(TAG, "getProgramType:  "+mProgramType);
-		return mProgramType;
+		return 0;
 	}
 	
 	private ArrayList<ProgramInfo> getAllProgramList() {
-		
-		TvChannelManager mTvChannelManager = TvChannelManager.getInstance();
+		try {
+			TvChannelManager mTvChannelManager = TvChannelManager.getInstance();
 
-		ArrayList<ProgramInfo> mProgramNumbers = new ArrayList<ProgramInfo>();
-		int m_nServiceNum = mTvChannelManager.getProgramCount(TvChannelManager.PROGRAM_COUNT_ATV_DTV);
-		
-		for (int i = 0; i < m_nServiceNum; i++) {
-			ProgramInfo mProgramInfo = (ProgramInfo) mTvChannelManager.getProgramInfoByIndex(i);
-			if (mProgramInfo != null) {
-				if (mProgramInfo.isDelete == true) {
-					continue;
-				} else {
-					getKtcLogerUtil().I(TAG, "getAllProgramList:  "+mProgramInfo.serviceName);
-					mProgramNumbers.add(mProgramInfo);
+			ArrayList<ProgramInfo> mProgramNumbers = new ArrayList<ProgramInfo>();
+			int m_nServiceNum = mTvChannelManager.getProgramCount(TvChannelManager.PROGRAM_COUNT_ATV_DTV);
+			
+			for (int i = 0; i < m_nServiceNum; i++) {
+				ProgramInfo mProgramInfo = (ProgramInfo) mTvChannelManager.getProgramInfoByIndex(i);
+				if (mProgramInfo != null) {
+					if (mProgramInfo.isDelete == true) {
+						continue;
+					} else {
+						getKtcLogerUtil().I(TAG, "getAllProgramList:  "+mProgramInfo.serviceName);
+						mProgramNumbers.add(mProgramInfo);
+					}
 				}
 			}
+			return mProgramNumbers;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-		return mProgramNumbers;
+		return null;
 	}
 	
 	
@@ -539,83 +634,97 @@ public class KtcChannelUtil {
 	 * @return void
 	 */
 	public void changeTvSource(final int sourceType){
-		switch (sourceType) {
-		case TvCommonManager.INPUT_SOURCE_ATV:
-		case TvCommonManager.INPUT_SOURCE_DTV:
-		case TvCommonManager.INPUT_SOURCE_CVBS:
-		case TvCommonManager.INPUT_SOURCE_YPBPR:
-		case TvCommonManager.INPUT_SOURCE_HDMI:
-		case TvCommonManager.INPUT_SOURCE_HDMI2:
-		case TvCommonManager.INPUT_SOURCE_HDMI3:
-		case TvCommonManager.INPUT_SOURCE_VGA:
-			if(sourceType == TvCommonManager.INPUT_SOURCE_DTV && !getKtcSystemUtil().hasDTMB()){
-				return ;
-			}
-			
-	        if (TvCommonManager.getInstance().getCurrentTvInputSource() >= TvCommonManager.INPUT_SOURCE_STORAGE) {
-	            Intent source_switch_from_storage = new Intent("source.switch.from.storage");
-	            mContext.sendBroadcast(source_switch_from_storage);
-	            executePreviousTask(sourceType);
-	        } else {
-	            new Thread(new Runnable(){
-	                @Override
-	                public void run(){
-	                	try {
-	                        Thread.sleep(1000);
-	                    } catch (InterruptedException e) {
-	                        e.printStackTrace();
-	                    }
-	                	updateSourceInputType(sourceType);
-	                }
-	           }).start();
-	        }
-			break;
-		case TvCommonManager.INPUT_SOURCE_STORAGE:
-			TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_STORAGE);
-			break;
+		try {
+			TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
+			if (mTvCommonManager != null) {
+				switch (sourceType) {
+				case TvCommonManager.INPUT_SOURCE_ATV:
+				case TvCommonManager.INPUT_SOURCE_DTV:
+				case TvCommonManager.INPUT_SOURCE_CVBS:
+				case TvCommonManager.INPUT_SOURCE_YPBPR:
+				case TvCommonManager.INPUT_SOURCE_HDMI:
+				case TvCommonManager.INPUT_SOURCE_HDMI2:
+				case TvCommonManager.INPUT_SOURCE_HDMI3:
+				case TvCommonManager.INPUT_SOURCE_VGA:
+					if(sourceType == TvCommonManager.INPUT_SOURCE_DTV && !getKtcSystemUtil().hasDTMB()){
+						return ;
+					}
+					
+			        if (mTvCommonManager.getCurrentTvInputSource() >= TvCommonManager.INPUT_SOURCE_STORAGE) {
+			            Intent source_switch_from_storage = new Intent("source.switch.from.storage");
+			            mContext.sendBroadcast(source_switch_from_storage);
+			            executePreviousTask(sourceType);
+			        } else {
+			            new Thread(new Runnable(){
+			                @Override
+			                public void run(){
+			                	try {
+			                        Thread.sleep(1000);
+			                    } catch (InterruptedException e) {
+			                        e.printStackTrace();
+			                    }
+			                	updateSourceInputType(sourceType);
+			                }
+			           }).start();
+			        }
+					break;
+				case TvCommonManager.INPUT_SOURCE_STORAGE:
+					if (mTvCommonManager != null) {
+						mTvCommonManager.setInputSource(TvCommonManager.INPUT_SOURCE_STORAGE);	
+					}
+					break;
 
-		default:
-			break;
+				default:
+					break;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 	
     private void executePreviousTask(final int inputSource) {
-    	getKtcLogerUtil().I(TAG, "executePreviousTask:  "+inputSource);
-    	
-    	final Intent mIntent = new Intent("com.mstar.android.intent.action.START_TV_PLAYER");
-    	mIntent.putExtra("task_tag", "input_source_changed");
-        mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                if (inputSource == TvCommonManager.INPUT_SOURCE_ATV){
-                	TvCommonManager.getInstance().setInputSource(inputSource);
-                    int curChannelNumber = TvChannelManager.getInstance().getCurrentChannelNumber();
-                    if (curChannelNumber > 0xFF) {
-                        curChannelNumber = 0;
+    	try {
+        	getKtcLogerUtil().I(TAG, "executePreviousTask:  "+inputSource);
+        	
+        	final Intent mIntent = new Intent("com.mstar.android.intent.action.START_TV_PLAYER");
+        	mIntent.putExtra("task_tag", "input_source_changed");
+            mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
-                    TvChannelManager.getInstance().setAtvChannel(curChannelNumber);
-                }else if (inputSource == TvCommonManager.INPUT_SOURCE_DTV){
-                	TvCommonManager.getInstance().setInputSource(inputSource);
-                	TvChannelManager.getInstance().playDtvCurrentProgram();
-                }else{
-                	TvCommonManager.getInstance().setInputSource(inputSource);
-                }
+                    if (inputSource == TvCommonManager.INPUT_SOURCE_ATV){
+                    	TvCommonManager.getInstance().setInputSource(inputSource);
+                        int curChannelNumber = TvChannelManager.getInstance().getCurrentChannelNumber();
+                        if (curChannelNumber > 0xFF) {
+                            curChannelNumber = 0;
+                        }
+                        TvChannelManager.getInstance().setAtvChannel(curChannelNumber);
+                    }else if (inputSource == TvCommonManager.INPUT_SOURCE_DTV){
+                    	TvCommonManager.getInstance().setInputSource(inputSource);
+                    	TvChannelManager.getInstance().playDtvCurrentProgram();
+                    }else{
+                    	TvCommonManager.getInstance().setInputSource(inputSource);
+                    }
 
-                try {
-                    if (mIntent != null){
-                    	mContext.startActivity(mIntent);
+                    try {
+                        if (mIntent != null){
+                        	mContext.startActivity(mIntent);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
                 }
-            }
-        }).start();
+            }).start();
+    	} catch (Exception e) {
+    		e.printStackTrace();
+    	}
+
     }
     
     private void updateSourceInputType(int inputSourceTypeIdex){
@@ -657,7 +766,30 @@ public class KtcChannelUtil {
 	 * @return int
 	 */
 	public int getCurrentInputSource(){
-		return TvCommonManager.getInstance().getCurrentTvInputSource();
+		try {
+			TvCommonManager mTvCommonManager = TvCommonManager.getInstance();
+			if (mTvCommonManager != null) {
+				return mTvCommonManager.getCurrentTvInputSource();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
+	
+	public void enterTV(){
+		try {
+			ComponentName componentName = new ComponentName("com.mstar.tv.tvplayer.ui",
+	                 "com.mstar.tv.tvplayer.ui.RootActivity");
+			 Intent intent = new Intent(Intent.ACTION_MAIN);
+			 intent.addCategory(Intent.CATEGORY_LAUNCHER);
+			 intent.setComponent(componentName);
+			 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+			 mContext.startActivity(intent);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		 
 	}
 	
 }

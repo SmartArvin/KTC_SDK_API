@@ -16,6 +16,7 @@ import com.mstar.android.tvapi.factory.vo.EnumAcOnPowerOnMode;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.view.KeyEvent;
@@ -31,7 +32,7 @@ public class KtcSystemUtil {
 	private static KtcSystemUtil mKtcSystemUtil;
 	private static KtcLogerUtil  mKtcLogerUtil;
 	private static Context mContext = null;
-	
+    
 	public static KtcSystemUtil getInstance(Context context) {
 		mContext = context;
     	if (mKtcSystemUtil == null) {
@@ -210,21 +211,25 @@ public class KtcSystemUtil {
 	 * @return String
 	 */
    public String getFirstUsbPath(){
-   	MStorageManager storageManager = MStorageManager.getInstance(mContext);
-		String[] volumes = storageManager.getVolumePaths();
-		boolean isUsbAsSd = SystemProperties.getBoolean("mstar.usb.as.sdcard", false);
-		for(String mVolume : volumes){
-			//filter sdcard
-			if(!isUsbAsSd && mVolume.equals("/mnt/sdcard")){
-				continue ;
+	   try {
+		 	MStorageManager storageManager = MStorageManager.getInstance(mContext);
+			String[] volumes = storageManager.getVolumePaths();
+			boolean isUsbAsSd = SystemProperties.getBoolean("mstar.usb.as.sdcard", false);
+			for(String mVolume : volumes){
+				//filter sdcard
+				if(!isUsbAsSd && mVolume.equals("/mnt/sdcard")){
+					continue ;
+				}
+				//for usb plug
+				File mFile = new File(mVolume);
+				if(mFile != null && mFile.list().length > 0){
+					getKtcLogerUtil().I(TAG, "getFirstUsbPath:  "+(mVolume.endsWith("/") ? mVolume : mVolume+"/"));
+					return mVolume.endsWith("/") ? mVolume : mVolume+"/";
+				}
 			}
-			//for usb plug
-			File mFile = new File(mVolume);
-			if(mFile != null && mFile.list().length > 0){
-				getKtcLogerUtil().I(TAG, "getFirstUsbPath:  "+(mVolume.endsWith("/") ? mVolume : mVolume+"/"));
-				return mVolume.endsWith("/") ? mVolume : mVolume+"/";
-			}
-		}
+	   } catch (Exception e) {
+		   e.printStackTrace();
+	   }
 		return null;
    }
 	
@@ -348,4 +353,49 @@ public class KtcSystemUtil {
 		return false;
 	}
 
+	public String getResolution() {
+		String panelType = "1920x1080";
+		try {
+			int panel_width = TvManager.getInstance().getPictureManager().getPanelWidthHeight().width;
+			int panel_height = TvManager.getInstance().getPictureManager().getPanelWidthHeight().height;
+			if (panel_width == 3840) {
+				panelType = "UHD " + panel_width + "x" + panel_height;
+			} else if (panel_width == 3840) {
+				panelType = "FHD " + panel_width + "x" + panel_height;
+			} else {
+				panelType = "HD " + panel_width + "x" + panel_height;
+			}
+			
+		} catch (TvCommonException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return panelType;
+	}
+	
+	public String getCPUInfo() {
+		try {
+			if (Build.DEVICE.startsWith("MS648")) {
+				return "四核 CA53";
+			} else if (Build.DEVICE.startsWith("MS338")) {
+				return "ARM Cortex-A7 双核 1.2GHz";
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public String getGPUInfo() {
+		try {
+			if (Build.DEVICE.startsWith("MS648")) {
+				return "双核 MaliT720MP";
+			} else if (Build.DEVICE.startsWith("MS338")) {
+				return "双核 Mali -400MP2";
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
